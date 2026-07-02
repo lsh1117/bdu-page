@@ -905,7 +905,7 @@ button {
   display: inline-block;
   width: 22px;
   height: 22px;
-  background: url("../images/common/ic_evaluation.png") no-repeat center/contain;
+  background: url("../images/common/lnb_menu06.png") no-repeat center/contain;
 }
 
 .bdu-icon--menu7 {
@@ -922,6 +922,30 @@ button {
   width: 22px;
   height: 22px;
   background: url("../images/common/lnb_menu08.png") no-repeat center/contain;
+}
+
+.bdu-icon--menu9 {
+  flex-shrink: 0;
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  background: url("../images/common/lnb_menu09.png") no-repeat center/contain;
+}
+
+.bdu-icon--menu10 {
+  flex-shrink: 0;
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  background: url("../images/common/lnb_menu10.png") no-repeat center/contain;
+}
+
+.bdu-icon--menu11 {
+  flex-shrink: 0;
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  background: url("../images/common/lnb_menu11.png") no-repeat center/contain;
 }
 
 .bdu-icon--radio-16-off {
@@ -1073,6 +1097,18 @@ button {
 }
 
 .bdu-icon--menu8 svg {
+  display: none;
+}
+
+.bdu-icon--menu9 svg {
+  display: none;
+}
+
+.bdu-icon--menu10 svg {
+  display: none;
+}
+
+.bdu-icon--menu11 svg {
   display: none;
 }
 
