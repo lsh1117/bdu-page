@@ -1,0 +1,455 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>평가하기 - 양육자와 면담하기</title>
+	<link rel="stylesheet" href="../css/app.css" />
+</head>
+
+<body class="page-0008">
+
+	<div class="bdu-container">
+		<div class="bdu-content-head">
+			<button type="button" class="bdu-button bdu-button--lnb-open" aria-controls="lnb" aria-expanded="false"
+				aria-label="학습 메뉴 열기">
+				<span class="bdu-icon bdu-icon--btn-lnb-off" aria-hidden="true"></span>
+				<span class="bdu-button__label">메뉴열기</span>
+			</button>
+		</div>
+
+		<div class="bdu-lnb-overlay" hidden></div>
+
+		<nav id="lnb" class="bdu-lnb bdu-lnb--panel" aria-label="학습 메뉴">
+			<div class="bdu-lnb-header">
+				<button type="button" class="bdu-button bdu-button--lnb-close" aria-controls="lnb" aria-expanded="false"
+					aria-label="학습 메뉴 닫기">
+					<span class="bdu-icon bdu-icon--btn-lnb-on" aria-hidden="true"></span>
+				</button>
+			</div>
+			<ul class="bdu-menu-list bdu-menu-list--panel">
+				<li class="bdu-menu-item bdu-menu-item--panel">
+					<a href="page0001.html">
+						<span class="bdu-icon bdu-icon--menu1 bdu-icon--menu" aria-hidden="true"></span>
+						<span class="bdu-menu-item__label">사전진단</span>
+						<span class="bdu-menu-item__arrow" aria-hidden="true"></span>
+					</a>
+				</li>
+				<li class="bdu-menu-item bdu-menu-item--panel">
+					<a href="page0002.html">
+						<span class="bdu-icon bdu-icon--menu2 bdu-icon--menu" aria-hidden="true"></span>
+						<span class="bdu-menu-item__label">마음열기</span>
+						<span class="bdu-menu-item__arrow" aria-hidden="true"></span>
+					</a>
+				</li>
+				<li class="bdu-menu-item bdu-menu-item--panel">
+					<a href="page0003.html">
+						<span class="bdu-icon bdu-icon--menu3 bdu-icon--menu" aria-hidden="true"></span>
+						<span class="bdu-menu-item__label">학습내용 및 목표</span>
+						<span class="bdu-menu-item__arrow" aria-hidden="true"></span>
+					</a>
+				</li>
+				<li class="bdu-menu-item bdu-menu-item--panel bdu-menu-item--highlight">
+					<a href="index.html">
+						<span class="bdu-icon bdu-icon--menu4 bdu-icon--menu" aria-hidden="true"></span>
+						<span class="bdu-menu-item__label">본학습</span>
+						<span class="bdu-menu-item__arrow" aria-hidden="true"></span>
+					</a>
+				</li>
+				<li class="bdu-menu-item bdu-menu-item--panel">
+					<a href="index.html">
+						<span class="bdu-icon bdu-icon--menu5 bdu-icon--menu" aria-hidden="true"></span>
+						<span class="bdu-menu-item__label">생각해보기 · 적용하기</span>
+						<span class="bdu-menu-item__arrow" aria-hidden="true"></span>
+					</a>
+				</li>
+				<li class="bdu-menu-item bdu-menu-item--panel bdu-is-active">
+					<a href="page0008.html">
+						<span class="bdu-icon bdu-icon--menu6 bdu-icon--menu" aria-hidden="true"></span>
+						<span class="bdu-menu-item__label">평가하기</span>
+					</a>
+				</li>
+				<li class="bdu-menu-item bdu-menu-item--panel">
+					<a href="index.html">
+						<span class="bdu-icon bdu-icon--menu7 bdu-icon--menu" aria-hidden="true"></span>
+						<span class="bdu-menu-item__label">학습정리</span>
+					</a>
+				</li>
+				<li class="bdu-menu-item bdu-menu-item--panel">
+					<a href="#">
+						<span class="bdu-icon bdu-icon--menu8 bdu-icon--menu" aria-hidden="true"></span>
+						<span class="bdu-menu-item__label">다음강의 주체</span>
+					</a>
+				</li>
+			</ul>
+		</nav>
+
+		<main class="bdu-page">
+			<section class="bdu-section page-0008 bdu-is-active" aria-labelledby="page0008-title">
+				<header class="bdu-page-head">
+					<div class="bdu-page-head__title-row">
+						<span class="bdu-icon bdu-icon--evaluation bdu-icon--page-head" aria-hidden="true"></span>
+						<h1 id="page0008-title" class="bdu-page-head__title">평가하기</h1>
+					</div>
+					<div class="bdu-page-head__intro-card">
+						<p class="bdu-page-head__intro">
+							학습한 내용을 바탕으로 생활에 적용해 봅시다.
+						</p>
+						<button type="button" class="bdu-button bdu-button--sound-boxed"
+							data-bdu-sound="../media/mp3/page-01-06.mp3" aria-pressed="false" aria-label="본문 내용 음성으로 듣기"></button>
+					</div>
+				</header>
+
+				<div class="bdu-quiz-tabs" role="tablist" aria-label="문제 번호">
+					<button type="button" class="bdu-quiz-tabs__btn bdu-is-active" role="tab" id="quiz-tab-1"
+						aria-selected="true" aria-controls="quiz-panel-1" tabindex="0">1</button>
+					<button type="button" class="bdu-quiz-tabs__btn" role="tab" id="quiz-tab-2"
+						aria-selected="false" aria-controls="quiz-panel-2" tabindex="-1">2</button>
+					<button type="button" class="bdu-quiz-tabs__btn" role="tab" id="quiz-tab-3"
+						aria-selected="false" aria-controls="quiz-panel-3" tabindex="-1">3</button>
+					<button type="button" class="bdu-quiz-tabs__btn" role="tab" id="quiz-tab-4"
+						aria-selected="false" aria-controls="quiz-panel-4" tabindex="-1">4</button>
+					<button type="button" class="bdu-quiz-tabs__btn" role="tab" id="quiz-tab-5"
+						aria-selected="false" aria-controls="quiz-panel-5" tabindex="-1">5</button>
+				</div>
+
+				<div class="bdu-quiz">
+					<div id="quiz-panel-1" class="bdu-quiz-panel bdu-is-active" role="tabpanel"
+						aria-labelledby="quiz-tab-1"
+						data-quiz-answer="x"
+						data-quiz-explain="영아교사는 양육자로서 역할이 강조되며 유아교사는 영아교사에 비해 더 전문적인 역할을 필요로 합니다.">
+						<p class="bdu-quiz-panel__question">
+							대체로 영아교사는 유아교사에 비해 더 전문적인 역할을 필요로 한다.
+						</p>
+						<fieldset class="bdu-quiz-ox">
+							<legend class="bdu-visually-hidden">Q1 정답 선택</legend>
+							<ul class="bdu-quiz-ox__list">
+								<li>
+									<label class="bdu-quiz-ox__label">
+										<input type="radio" name="quiz-q1" value="o" />
+										<span class="bdu-visually-hidden">O (맞음)</span>
+										<img src="../images/common/img_o_off.svg" alt="" class="bdu-quiz-ox__img bdu-quiz-ox__img--off" />
+										<img src="../images/common/img_o_on.svg" alt="" class="bdu-quiz-ox__img bdu-quiz-ox__img--on" />
+									</label>
+								</li>
+								<li>
+									<label class="bdu-quiz-ox__label">
+										<input type="radio" name="quiz-q1" value="x" />
+										<span class="bdu-visually-hidden">X (틀림)</span>
+										<img src="../images/common/img_x_off.svg" alt="" class="bdu-quiz-ox__img bdu-quiz-ox__img--off" />
+										<img src="../images/common/img_x_on.svg" alt="" class="bdu-quiz-ox__img bdu-quiz-ox__img--on" />
+									</label>
+								</li>
+							</ul>
+						</fieldset>
+						<div class="bdu-quiz-panel__actions">
+							<button type="button" class="bdu-button bdu-button--check">정답확인</button>
+						</div>
+						<div class="bdu-quiz-modal" hidden>
+							<div class="bdu-quiz-modal__overlay" data-quiz-modal-close></div>
+							<div class="bdu-quiz-modal__box" role="dialog" aria-modal="true"
+								aria-labelledby="quiz-modal-title-1">
+								<div class="bdu-quiz-modal__header">
+									<h2 id="quiz-modal-title-1" class="bdu-quiz-modal__title">정답 확인</h2>
+									<button type="button" class="bdu-quiz-modal__close" data-quiz-modal-close
+										aria-label="정답 확인 닫기">×</button>
+								</div>
+								<div class="bdu-quiz-modal__body">
+									<p class="bdu-quiz-modal__answer">
+										<span class="bdu-quiz-modal__label">정답</span>
+										<span class="bdu-quiz-modal__answer-value"></span>
+									</p>
+									<div class="bdu-quiz-modal__explain">
+										<p class="bdu-quiz-modal__explain-title">해설</p>
+										<p class="bdu-quiz-modal__explain-text"></p>
+									</div>
+								</div>
+								<div class="bdu-quiz-modal__footer">
+									<button type="button" class="bdu-button bdu-button--modal-close" data-quiz-modal-close>닫기</button>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div id="quiz-panel-2" class="bdu-quiz-panel bdu-quiz-panel--choice" role="tabpanel"
+						aria-labelledby="quiz-tab-2" hidden
+						data-quiz-answer="4"
+						data-quiz-explain="아이돌보미는 보호자의 육아방침과 영양 기준에 따라 식사·간식을 제공해야 합니다. 아이의 입맛만 맞추어 조리·제공하는 것은 공식 역할에 맞지 않습니다.">
+						<p class="bdu-quiz-panel__question">
+							아이돌보미의 역할은 공식적으로 규정한 것입니다. 다음 중 올바르지 않은 것은 무엇일까요?
+						</p>
+						<fieldset class="bdu-quiz-choice">
+							<legend class="bdu-visually-hidden">Q2 정답 선택</legend>
+
+							<ul class="bdu-quiz-choice__list">
+								<li class="bdu-quiz-choice__item">
+									<label class="bdu-quiz-choice__label">
+										<input type="radio" name="quiz-q2" value="1" class="bdu-quiz-choice__radio" />
+										<span class="bdu-quiz-choice__badge">1</span>
+										<span class="bdu-quiz-choice__text">아동의 안전한 보호 및 돌봄 업무를 수행한다.</span>
+									</label>
+								</li>
+								<li class="bdu-quiz-choice__item">
+									<label class="bdu-quiz-choice__label">
+										<input type="radio" name="quiz-q2" value="2" class="bdu-quiz-choice__radio" />
+										<span class="bdu-quiz-choice__badge">2</span>
+										<span class="bdu-quiz-choice__text">아동의 건강관리 및 응급조치 등 안전배려를 한다.</span>
+									</label>
+								</li>
+								<li class="bdu-quiz-choice__item">
+									<label class="bdu-quiz-choice__label">
+										<input type="radio" name="quiz-q2" value="3" class="bdu-quiz-choice__radio" />
+										<span class="bdu-quiz-choice__badge">3</span>
+										<span class="bdu-quiz-choice__text">서비스 대상 보호자의 육아방침을 존중한다.</span>
+									</label>
+								</li>
+								<li class="bdu-quiz-choice__item">
+									<label class="bdu-quiz-choice__label">
+										<input type="radio" name="quiz-q2" value="4" class="bdu-quiz-choice__radio" />
+										<span class="bdu-quiz-choice__badge">4</span>
+										<span class="bdu-quiz-choice__text">식사와 간식은 아이의 입맛에 맞게 조리하여 제공한다.</span>
+									</label>
+								</li>
+							</ul>
+						</fieldset>
+						<div class="bdu-quiz-panel__actions">
+							<button type="button" class="bdu-button bdu-button--check">정답확인</button>
+						</div>
+						<div class="bdu-quiz-modal" hidden>
+							<div class="bdu-quiz-modal__overlay" data-quiz-modal-close></div>
+							<div class="bdu-quiz-modal__box" role="dialog" aria-modal="true"
+								aria-labelledby="quiz-modal-title-2">
+								<div class="bdu-quiz-modal__header">
+									<h2 id="quiz-modal-title-2" class="bdu-quiz-modal__title">정답 확인</h2>
+									<button type="button" class="bdu-quiz-modal__close" data-quiz-modal-close
+										aria-label="정답 확인 닫기">×</button>
+								</div>
+								<div class="bdu-quiz-modal__body">
+									<p class="bdu-quiz-modal__answer">
+										<span class="bdu-quiz-modal__label">정답</span>
+										<span class="bdu-quiz-modal__answer-value"></span>
+									</p>
+									<div class="bdu-quiz-modal__explain">
+										<p class="bdu-quiz-modal__explain-title">해설</p>
+										<p class="bdu-quiz-modal__explain-text"></p>
+									</div>
+								</div>
+								<div class="bdu-quiz-modal__footer">
+									<button type="button" class="bdu-button bdu-button--modal-close" data-quiz-modal-close>닫기</button>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div id="quiz-panel-3" class="bdu-quiz-panel bdu-quiz-panel--blank" role="tabpanel"
+						aria-labelledby="quiz-tab-3" hidden
+						data-quiz-answer="놀이"
+						data-quiz-explain="듀이(Dewey)는 놀이를 유아의 신체·정서·인지·사회 발달을 도모하는 중요한 수단으로 보았습니다. 놀이를 통해 유아는 경험하고 탐색하며 전인적으로 성장합니다.">
+						<p class="bdu-quiz-panel__question">
+							다음의 빈칸에 들어갈 알맞은 단어를 작성해보세요.
+						</p>
+						<div class="bdu-quiz-blank__sentence">
+							<p>
+								Dewey는 (
+								<span class="bdu-quiz-blank__gap" aria-hidden="true">?</span>
+								)를 유아의 신체, 정서, 인지, 사회 발달을 도모하는 수단으로 간주하였다.
+							</p>
+						</div>
+						<div class="bdu-quiz-blank__input-wrap">
+							<label for="quiz-q3-input" class="bdu-visually-hidden">Q3 정답 입력</label>
+							<input type="text" id="quiz-q3-input" class="bdu-quiz-blank__input" name="quiz-q3"
+								placeholder="정답을 입력하세요." autocomplete="off" />
+						</div>
+						<div class="bdu-quiz-panel__actions">
+							<button type="button" class="bdu-button bdu-button--check">정답확인</button>
+						</div>
+						<div class="bdu-quiz-modal" hidden>
+							<div class="bdu-quiz-modal__overlay" data-quiz-modal-close></div>
+							<div class="bdu-quiz-modal__box" role="dialog" aria-modal="true"
+								aria-labelledby="quiz-modal-title-3">
+								<div class="bdu-quiz-modal__header">
+									<h2 id="quiz-modal-title-3" class="bdu-quiz-modal__title">정답 확인</h2>
+									<button type="button" class="bdu-quiz-modal__close" data-quiz-modal-close
+										aria-label="정답 확인 닫기">×</button>
+								</div>
+								<div class="bdu-quiz-modal__body">
+									<p class="bdu-quiz-modal__answer">
+										<span class="bdu-quiz-modal__label">정답</span>
+										<span class="bdu-quiz-modal__answer-value"></span>
+									</p>
+									<div class="bdu-quiz-modal__explain">
+										<p class="bdu-quiz-modal__explain-title">해설</p>
+										<p class="bdu-quiz-modal__explain-text"></p>
+									</div>
+								</div>
+								<div class="bdu-quiz-modal__footer">
+									<button type="button" class="bdu-button bdu-button--modal-close" data-quiz-modal-close>닫기</button>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div id="quiz-panel-4" class="bdu-quiz-panel bdu-quiz-panel--subjective" role="tabpanel"
+						aria-labelledby="quiz-tab-4" hidden
+						data-quiz-answer="모범 답안"
+						data-quiz-explain="① 가스 밸브를 즉시 잠근다. ② 감전·폭발 위험이 있으므로 전기 스위치는 누르지 않고 화재 확산을 막는다. ③ 초기 소화가 가능하면 습한 담요 등으로 불을 끈다. ④ 119에 신고하고, 연기를 피해 낮은 자세로 안전하게 대피한다. ⑤ 유아를 포함한 가족의 안전을 최우선으로 보호한다.">
+						<p class="bdu-quiz-panel__question">
+							가정에서 가스로 인한 “화재가 발생하였을 때 대처방안”에 대해 기술해보세요.
+						</p>
+						<div class="bdu-quiz-subjective">
+							<label for="quiz-q4-input" class="bdu-visually-hidden">Q4 서술형 답안 입력</label>
+							<textarea id="quiz-q4-input" class="bdu-quiz-subjective__textarea" name="quiz-q4"
+								rows="12" placeholder="정답을 입력하세요."></textarea>
+						</div>
+						<div class="bdu-quiz-panel__actions">
+							<button type="button" class="bdu-button bdu-button--check">정답확인</button>
+						</div>
+						<div class="bdu-quiz-modal" hidden>
+							<div class="bdu-quiz-modal__overlay" data-quiz-modal-close></div>
+							<div class="bdu-quiz-modal__box" role="dialog" aria-modal="true"
+								aria-labelledby="quiz-modal-title-4">
+								<div class="bdu-quiz-modal__header">
+									<h2 id="quiz-modal-title-4" class="bdu-quiz-modal__title">정답 확인</h2>
+									<button type="button" class="bdu-quiz-modal__close" data-quiz-modal-close
+										aria-label="정답 확인 닫기">×</button>
+								</div>
+								<div class="bdu-quiz-modal__body">
+									<p class="bdu-quiz-modal__answer">
+										<span class="bdu-quiz-modal__label">정답</span>
+										<span class="bdu-quiz-modal__answer-value"></span>
+									</p>
+									<div class="bdu-quiz-modal__explain">
+										<p class="bdu-quiz-modal__explain-title">해설</p>
+										<p class="bdu-quiz-modal__explain-text"></p>
+									</div>
+								</div>
+								<div class="bdu-quiz-modal__footer">
+									<button type="button" class="bdu-button bdu-button--modal-close" data-quiz-modal-close>닫기</button>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div id="quiz-panel-5" class="bdu-quiz-panel bdu-quiz-panel--match" role="tabpanel"
+						aria-labelledby="quiz-tab-5" hidden
+						data-quiz-explain="1. 전화 — C. 알렉산더 그레이엄 벨 / 2. 전구 — B. 토머스 에디슨 / 3. 비행기 — A. 라이트 형제">
+						<div class="bdu-quiz-panel__question">
+							<p class="bdu-quiz-panel__question-text">
+								다음 보기에서 서로 연관된 항목끼리 올바르게 짝지어 보세요.
+							</p>
+							<p class="bdu-quiz-match__hint">왼쪽 연결점에서 드래그하여 오른쪽 연결점까지 선을 그어 주세요.</p>
+						</div>
+						<div class="bdu-quiz-match">
+							<div class="bdu-quiz-match__board">
+								<ul class="bdu-quiz-match__col bdu-quiz-match__col--left">
+									<li class="bdu-quiz-match__row">
+										<span class="bdu-quiz-match__badge">
+											<span class="bdu-quiz-match__num">1.</span>
+											<span class="bdu-quiz-match__text">전화</span>
+										</span>
+										<button type="button" class="bdu-quiz-match__node" data-match-side="left"
+											data-match-id="1" aria-label="1번 항목 연결점"></button>
+									</li>
+									<li class="bdu-quiz-match__row">
+										<span class="bdu-quiz-match__badge">
+											<span class="bdu-quiz-match__num">2.</span>
+											<span class="bdu-quiz-match__text">전구</span>
+										</span>
+										<button type="button" class="bdu-quiz-match__node" data-match-side="left"
+											data-match-id="2" aria-label="2번 항목 연결점"></button>
+									</li>
+									<li class="bdu-quiz-match__row">
+										<span class="bdu-quiz-match__badge">
+											<span class="bdu-quiz-match__num">3.</span>
+											<span class="bdu-quiz-match__text">비행기</span>
+										</span>
+										<button type="button" class="bdu-quiz-match__node" data-match-side="left"
+											data-match-id="3" aria-label="3번 항목 연결점"></button>
+									</li>
+								</ul>
+								<canvas class="bdu-quiz-match__canvas" aria-hidden="true"></canvas>
+								<ul class="bdu-quiz-match__col bdu-quiz-match__col--right">
+									<li class="bdu-quiz-match__row">
+										<button type="button" class="bdu-quiz-match__node" data-match-side="right"
+											data-match-id="a" aria-label="A 항목 연결점"></button>
+										<span class="bdu-quiz-match__badge">
+											<span class="bdu-quiz-match__num">A.</span>
+											<span class="bdu-quiz-match__text">라이트 형제</span>
+										</span>
+									</li>
+									<li class="bdu-quiz-match__row">
+										<button type="button" class="bdu-quiz-match__node" data-match-side="right"
+											data-match-id="b" aria-label="B 항목 연결점"></button>
+										<span class="bdu-quiz-match__badge">
+											<span class="bdu-quiz-match__num">B.</span>
+											<span class="bdu-quiz-match__text">토머스 에디슨</span>
+										</span>
+									</li>
+									<li class="bdu-quiz-match__row">
+										<button type="button" class="bdu-quiz-match__node" data-match-side="right"
+											data-match-id="c" aria-label="C 항목 연결점"></button>
+										<span class="bdu-quiz-match__badge">
+											<span class="bdu-quiz-match__num">C.</span>
+											<span class="bdu-quiz-match__text">알렉산더 그레이엄 벨</span>
+										</span>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="bdu-quiz-panel__actions">
+							<button type="button" class="bdu-button bdu-button--reset" data-quiz-match-reset>다시선택</button>
+							<button type="button" class="bdu-button bdu-button--check">정답확인</button>
+						</div>
+						<div class="bdu-quiz-modal" hidden>
+							<div class="bdu-quiz-modal__overlay" data-quiz-modal-close></div>
+							<div class="bdu-quiz-modal__box" role="dialog" aria-modal="true"
+								aria-labelledby="quiz-modal-title-5">
+								<div class="bdu-quiz-modal__header">
+									<h2 id="quiz-modal-title-5" class="bdu-quiz-modal__title">정답 확인</h2>
+									<button type="button" class="bdu-quiz-modal__close" data-quiz-modal-close
+										aria-label="정답 확인 닫기">×</button>
+								</div>
+								<div class="bdu-quiz-modal__body">
+									<p class="bdu-quiz-modal__answer">
+										<span class="bdu-quiz-modal__label">정답</span>
+										<span class="bdu-quiz-modal__answer-value"></span>
+									</p>
+									<div class="bdu-quiz-modal__explain">
+										<p class="bdu-quiz-modal__explain-title">해설</p>
+										<p class="bdu-quiz-modal__explain-text"></p>
+									</div>
+								</div>
+								<div class="bdu-quiz-modal__footer">
+									<button type="button" class="bdu-button bdu-button--modal-close" data-quiz-modal-close>닫기</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="bdu-notice-modal" hidden>
+					<div class="bdu-notice-modal__overlay" data-notice-modal-close></div>
+					<div class="bdu-notice-modal__box" role="alertdialog" aria-modal="true"
+						aria-labelledby="quiz-notice-title">
+						<div class="bdu-notice-modal__header">
+							<h2 id="quiz-notice-title" class="bdu-notice-modal__title">안내</h2>
+							<button type="button" class="bdu-notice-modal__close" data-notice-modal-close
+								aria-label="안내 닫기">×</button>
+						</div>
+						<div class="bdu-notice-modal__body">
+							<p class="bdu-notice-modal__message"></p>
+						</div>
+						<div class="bdu-notice-modal__footer">
+							<button type="button" class="bdu-button bdu-button--modal-close" data-notice-modal-close>확인</button>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+	</div>
+
+	<script src="../js/main.js"></script>
+</body>
+
+</html>

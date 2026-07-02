@@ -1,0 +1,1360 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>사전진단 - 양육자와 면담하기</title>
+	<link rel="stylesheet" href="../css/app.css" />
+</head>
+
+<body class="page-0001">
+
+	<div class="bdu-container">
+		<div class="bdu-content-head">
+			<button type="button" class="bdu-button bdu-button--lnb-open" aria-controls="lnb" aria-expanded="false"
+				aria-label="학습 메뉴 열기">
+				<span class="bdu-icon bdu-icon--btn-lnb-off" aria-hidden="true"></span>
+				<span class="bdu-button__label">메뉴열기</span>
+			</button>
+		</div>
+
+		<div class="bdu-lnb-overlay" hidden></div>
+
+		<nav id="lnb" class="bdu-lnb bdu-lnb--panel" aria-label="학습 메뉴">
+			<div class="bdu-lnb-header">
+				<button type="button" class="bdu-button bdu-button--lnb-close" aria-controls="lnb" aria-expanded="false"
+					aria-label="학습 메뉴 닫기">
+					<span class="bdu-icon bdu-icon--btn-lnb-on" aria-hidden="true"></span>
+				</button>
+			</div>
+			<ul class="bdu-menu-list bdu-menu-list--panel">
+				<li class="bdu-menu-item bdu-menu-item--panel bdu-is-active">
+					<a href="#page-0001" data-bdu-page="page-0001">
+						<span class="bdu-icon bdu-icon--menu1 bdu-icon--menu" aria-hidden="true"></span>
+						<span class="bdu-menu-item__label">사전진단</span>
+						<span class="bdu-menu-item__arrow" aria-hidden="true"></span>
+					</a>
+				</li>
+				<li class="bdu-menu-item bdu-menu-item--panel">
+					<a href="#page-0002" data-bdu-page="page-0002">
+						<span class="bdu-icon bdu-icon--menu2 bdu-icon--menu" aria-hidden="true"></span>
+						<span class="bdu-menu-item__label">마음열기</span>
+						<span class="bdu-menu-item__arrow" aria-hidden="true"></span>
+					</a>
+				</li>
+				<li class="bdu-menu-item bdu-menu-item--panel">
+					<a href="#page-0003" data-bdu-page="page-0003">
+						<span class="bdu-icon bdu-icon--menu3 bdu-icon--menu" aria-hidden="true"></span>
+						<span class="bdu-menu-item__label">학습내용 및 목표</span>
+						<span class="bdu-menu-item__arrow" aria-hidden="true"></span>
+					</a>
+				</li>
+				<li class="bdu-menu-item bdu-menu-item--panel">
+					<a href="#page-0004" data-bdu-page="page-0004">
+						<span class="bdu-icon bdu-icon--menu4 bdu-icon--menu" aria-hidden="true"></span>
+						<span class="bdu-menu-item__label">보조영상</span>
+						<span class="bdu-menu-item__arrow" aria-hidden="true"></span>
+					</a>
+				</li>
+				<li class="bdu-menu-item bdu-menu-item--panel">
+					<a href="#page-0005" data-bdu-page="page-0005">
+						<span class="bdu-icon bdu-icon--menu5 bdu-icon--menu" aria-hidden="true"></span>
+						<span class="bdu-menu-item__label">기타자료</span>
+						<span class="bdu-menu-item__arrow" aria-hidden="true"></span>
+					</a>
+				</li>
+				<li class="bdu-menu-item bdu-menu-item--panel">
+					<a href="#page-0006" data-bdu-page="page-0006">
+						<span class="bdu-icon bdu-icon--menu6 bdu-icon--menu" aria-hidden="true"></span>
+						<span class="bdu-menu-item__label">본학습</span>
+					</a>
+				</li>
+				<li class="bdu-menu-item bdu-menu-item--panel">
+					<a href="#page-0007" data-bdu-page="page-0007">
+						<span class="bdu-icon bdu-icon--menu7 bdu-icon--menu" aria-hidden="true"></span>
+						<span class="bdu-menu-item__label">생각해보기 · 적용하기</span>
+					</a>
+				</li>
+				<li class="bdu-menu-item bdu-menu-item--panel">
+					<a href="#page-0008" data-bdu-page="page-0008">
+						<span class="bdu-icon bdu-icon--menu8 bdu-icon--menu" aria-hidden="true"></span>
+						<span class="bdu-menu-item__label">평가하기</span>
+					</a>
+				</li>
+				<li class="bdu-menu-item bdu-menu-item--panel">
+					<a href="#page-0009" data-bdu-page="page-0009">
+						<span class="bdu-icon bdu-icon--menu9 bdu-icon--menu" aria-hidden="true"></span>
+						<span class="bdu-menu-item__label">학습정리</span>
+					</a>
+				</li>
+				<li class="bdu-menu-item bdu-menu-item--panel">
+					<a href="#page-0010" data-bdu-page="page-0010">
+						<span class="bdu-icon bdu-icon--menu10 bdu-icon--menu" aria-hidden="true"></span>
+						<span class="bdu-menu-item__label">용어사전</span>
+					</a>
+				</li>
+				<li class="bdu-menu-item bdu-menu-item--panel">
+					<a href="#page-0011" data-bdu-page="page-0011">
+						<span class="bdu-icon bdu-icon--menu11 bdu-icon--menu" aria-hidden="true"></span>
+						<span class="bdu-menu-item__label">연관학위논문</span>
+					</a>
+				</li>
+			</ul>
+		</nav>
+
+		<main class="bdu-page">
+			<!-- 사전진단 -->
+			<section class="bdu-section page-0001 bdu-is-active" aria-labelledby="page0001-title">
+				<header class="bdu-page-head">
+					<div class="bdu-page-head__title-row">
+						<span class="bdu-icon bdu-icon--pre-assessment bdu-icon--page-head" aria-hidden="true"></span>
+						<h1 id="page0001-title" class="bdu-page-head__title">사전진단</h1>
+					</div>
+					<div class="bdu-page-head__intro-card">
+						<p class="bdu-page-head__intro">
+							수업에 들어가기 전, 학습자의 현재 양육태도를 알아볼 수 있도록 진단을 실시합니다.<br>
+							제시된 기준 항목을 보고 본인과 일치하는 수준에 체크해 보세요.
+						</p>
+						<button type="button" class="bdu-button bdu-button--sound-boxed"
+							data-bdu-sound="../media/mp3/page-01-06.mp3" aria-pressed="false" aria-label="본문 내용 음성으로 듣기"></button>
+					</div>
+				</header>
+
+				<div class="bdu-diagnosis">
+					<div class="bdu-diagnosis__head">
+						<h2 class="bdu-diagnosis__title">양육자와 면담하기 사전 진단 체크리스트</h2>
+						<div class="bdu-diagnosis__legend" aria-label="배점 안내">
+							<span class="bdu-diagnosis__legend-label">배점</span>
+							<ul class="bdu-diagnosis__legend-list">
+								<li class="bdu-diagnosis__legend-item"><span class="bdu-diagnosis__legend-num">1</span> 매우 미흡</li>
+								<li class="bdu-diagnosis__legend-item"><span class="bdu-diagnosis__legend-num">2</span> 대체로 미흡</li>
+								<li class="bdu-diagnosis__legend-item"><span class="bdu-diagnosis__legend-num">3</span> 보통</li>
+								<li class="bdu-diagnosis__legend-item"><span class="bdu-diagnosis__legend-num">4</span> 대체로 우수</li>
+								<li class="bdu-diagnosis__legend-item"><span class="bdu-diagnosis__legend-num">5</span> 매우 우수</li>
+							</ul>
+						</div>
+					</div>
+
+					<form class="bdu-diagnosis__form" action="#" method="post">
+						<div class="bdu-diagnosis__list" aria-describedby="page0001-diagnosis-desc">
+							<div class="bdu-diagnosis__head" aria-hidden="true">
+								<div>
+									<p id="page0001-diagnosis-desc" class="bdu-diagnosis__list-lead">다음 문항들에 대해 본인과 일치하는 수준에 체크해 보세요.</p>
+								</div>
+								<div>
+									<span class="bdu-diagnosis__cols-item"><em>1</em>매우<br>미흡</span>
+									<span class="bdu-diagnosis__cols-item"><em>2</em>대체로<br>미흡</span>
+									<span class="bdu-diagnosis__cols-item"><em>3</em>보통</span>
+									<span class="bdu-diagnosis__cols-item"><em>4</em>대체로<br>우수</span>
+									<span class="bdu-diagnosis__cols-item"><em>5</em>매우<br>우수</span>
+								</div>
+							</div>
+							<div class="bdu-diagnosis__group">
+								<h3 class="bdu-diagnosis__group-title"><strong>영아</strong>를 둔 양육자와 면담하기</h3>
+								<div class="bdu-diagnosis__group-body">
+									<fieldset class="bdu-diagnosis__row">
+										<div class="bdu-diagnosis__row-text">양육자를 통해 영아를 둔 가족 특성을 확인할 수 있다.</div>
+										<div class="bdu-diagnosis__row-options">
+											<label class="bdu-diagnosis__option">
+												<input type="radio" name="diagnosis-q01" value="1" class="bdu-diagnosis__option-input" aria-label="1점, 매우 미흡" />
+												<span class="bdu-diagnosis__option-text" aria-hidden="true"><em>1</em>매우<br>미흡</span>
+											</label>
+											<label class="bdu-diagnosis__option">
+												<input type="radio" name="diagnosis-q01" value="2" class="bdu-diagnosis__option-input" aria-label="2점, 대체로 미흡" />
+												<span class="bdu-diagnosis__option-text" aria-hidden="true"><em>2</em>대체로<br>미흡</span>
+											</label>
+											<label class="bdu-diagnosis__option">
+												<input type="radio" name="diagnosis-q01" value="3" class="bdu-diagnosis__option-input" aria-label="3점, 보통" />
+												<span class="bdu-diagnosis__option-text" aria-hidden="true"><em>3</em>보통</span>
+											</label>
+											<label class="bdu-diagnosis__option">
+												<input type="radio" name="diagnosis-q01" value="4" class="bdu-diagnosis__option-input" aria-label="4점, 대체로 우수" />
+												<span class="bdu-diagnosis__option-text" aria-hidden="true"><em>4</em>대체로<br>우수</span>
+											</label>
+											<label class="bdu-diagnosis__option">
+												<input type="radio" name="diagnosis-q01" value="5" class="bdu-diagnosis__option-input" aria-label="5점, 매우 우수" />
+												<span class="bdu-diagnosis__option-text" aria-hidden="true"><em>5</em>매우<br>우수</span>
+											</label>
+										</div>
+									</fieldset>
+									<fieldset class="bdu-diagnosis__row">
+										<div class="bdu-diagnosis__row-text">양육자를 통해 영아의 특성을 확인할 수 있다.</div>
+										<div class="bdu-diagnosis__row-options">
+											<label class="bdu-diagnosis__option">
+												<input type="radio" name="diagnosis-q02" value="1" class="bdu-diagnosis__option-input" aria-label="1점, 매우 미흡" />
+												<span class="bdu-diagnosis__option-text" aria-hidden="true"><em>1</em>매우<br>미흡</span>
+											</label>
+											<label class="bdu-diagnosis__option">
+												<input type="radio" name="diagnosis-q02" value="2" class="bdu-diagnosis__option-input" aria-label="2점, 대체로 미흡" />
+												<span class="bdu-diagnosis__option-text" aria-hidden="true"><em>2</em>대체로<br>미흡</span>
+											</label>
+											<label class="bdu-diagnosis__option">
+												<input type="radio" name="diagnosis-q02" value="3" class="bdu-diagnosis__option-input" aria-label="3점, 보통" />
+												<span class="bdu-diagnosis__option-text" aria-hidden="true"><em>3</em>보통</span>
+											</label>
+											<label class="bdu-diagnosis__option">
+												<input type="radio" name="diagnosis-q02" value="4" class="bdu-diagnosis__option-input" aria-label="4점, 대체로 우수" />
+												<span class="bdu-diagnosis__option-text" aria-hidden="true"><em>4</em>대체로<br>우수</span>
+											</label>
+											<label class="bdu-diagnosis__option">
+												<input type="radio" name="diagnosis-q02" value="5" class="bdu-diagnosis__option-input" aria-label="5점, 매우 우수" />
+												<span class="bdu-diagnosis__option-text" aria-hidden="true"><em>5</em>매우<br>우수</span>
+											</label>
+										</div>
+									</fieldset>
+									<fieldset class="bdu-diagnosis__row">
+										<div class="bdu-diagnosis__row-text">양육자를 통해 영아의 기본 요구사항을 확인할 수 있다.</div>
+										<div class="bdu-diagnosis__row-options">
+											<label class="bdu-diagnosis__option">
+												<input type="radio" name="diagnosis-q03" value="1" class="bdu-diagnosis__option-input" aria-label="1점, 매우 미흡" />
+												<span class="bdu-diagnosis__option-text" aria-hidden="true"><em>1</em>매우<br>미흡</span>
+											</label>
+											<label class="bdu-diagnosis__option">
+												<input type="radio" name="diagnosis-q03" value="2" class="bdu-diagnosis__option-input" aria-label="2점, 대체로 미흡" />
+												<span class="bdu-diagnosis__option-text" aria-hidden="true"><em>2</em>대체로<br>미흡</span>
+											</label>
+											<label class="bdu-diagnosis__option">
+												<input type="radio" name="diagnosis-q03" value="3" class="bdu-diagnosis__option-input" aria-label="3점, 보통" />
+												<span class="bdu-diagnosis__option-text" aria-hidden="true"><em>3</em>보통</span>
+											</label>
+											<label class="bdu-diagnosis__option">
+												<input type="radio" name="diagnosis-q03" value="4" class="bdu-diagnosis__option-input" aria-label="4점, 대체로 우수" />
+												<span class="bdu-diagnosis__option-text" aria-hidden="true"><em>4</em>대체로<br>우수</span>
+											</label>
+											<label class="bdu-diagnosis__option">
+												<input type="radio" name="diagnosis-q03" value="5" class="bdu-diagnosis__option-input" aria-label="5점, 매우 우수" />
+												<span class="bdu-diagnosis__option-text" aria-hidden="true"><em>5</em>매우<br>우수</span>
+											</label>
+										</div>
+									</fieldset>
+								</div>
+							</div>
+							<div class="bdu-diagnosis__group">
+								<h3 class="bdu-diagnosis__group-title"><strong>유아</strong>를 둔 양육자와 면담하기</h3>
+								<div class="bdu-diagnosis__group-body">
+									<fieldset class="bdu-diagnosis__row">
+										<div class="bdu-diagnosis__row-text">양육자를 통해 유아를 둔 가족 특성을 확인할 수 있다.</div>
+										<div class="bdu-diagnosis__row-options">
+											<label class="bdu-diagnosis__option">
+												<input type="radio" name="diagnosis-q04" value="1" class="bdu-diagnosis__option-input" aria-label="1점, 매우 미흡" />
+												<span class="bdu-diagnosis__option-text" aria-hidden="true"><em>1</em>매우<br>미흡</span>
+											</label>
+											<label class="bdu-diagnosis__option">
+												<input type="radio" name="diagnosis-q04" value="2" class="bdu-diagnosis__option-input" aria-label="2점, 대체로 미흡" />
+												<span class="bdu-diagnosis__option-text" aria-hidden="true"><em>2</em>대체로<br>미흡</span>
+											</label>
+											<label class="bdu-diagnosis__option">
+												<input type="radio" name="diagnosis-q04" value="3" class="bdu-diagnosis__option-input" aria-label="3점, 보통" />
+												<span class="bdu-diagnosis__option-text" aria-hidden="true"><em>3</em>보통</span>
+											</label>
+											<label class="bdu-diagnosis__option">
+												<input type="radio" name="diagnosis-q04" value="4" class="bdu-diagnosis__option-input" aria-label="4점, 대체로 우수" />
+												<span class="bdu-diagnosis__option-text" aria-hidden="true"><em>4</em>대체로<br>우수</span>
+											</label>
+											<label class="bdu-diagnosis__option">
+												<input type="radio" name="diagnosis-q04" value="5" class="bdu-diagnosis__option-input" aria-label="5점, 매우 우수" />
+												<span class="bdu-diagnosis__option-text" aria-hidden="true"><em>5</em>매우<br>우수</span>
+											</label>
+										</div>
+									</fieldset>
+									<fieldset class="bdu-diagnosis__row">
+										<div class="bdu-diagnosis__row-text">양육자를 통해 유아의 특성을 확인할 수 있다.</div>
+										<div class="bdu-diagnosis__row-options">
+											<label class="bdu-diagnosis__option">
+												<input type="radio" name="diagnosis-q05" value="1" class="bdu-diagnosis__option-input" aria-label="1점, 매우 미흡" />
+												<span class="bdu-diagnosis__option-text" aria-hidden="true"><em>1</em>매우<br>미흡</span>
+											</label>
+											<label class="bdu-diagnosis__option">
+												<input type="radio" name="diagnosis-q05" value="2" class="bdu-diagnosis__option-input" aria-label="2점, 대체로 미흡" />
+												<span class="bdu-diagnosis__option-text" aria-hidden="true"><em>2</em>대체로<br>미흡</span>
+											</label>
+											<label class="bdu-diagnosis__option">
+												<input type="radio" name="diagnosis-q05" value="3" class="bdu-diagnosis__option-input" aria-label="3점, 보통" />
+												<span class="bdu-diagnosis__option-text" aria-hidden="true"><em>3</em>보통</span>
+											</label>
+											<label class="bdu-diagnosis__option">
+												<input type="radio" name="diagnosis-q05" value="4" class="bdu-diagnosis__option-input" aria-label="4점, 대체로 우수" />
+												<span class="bdu-diagnosis__option-text" aria-hidden="true"><em>4</em>대체로<br>우수</span>
+											</label>
+											<label class="bdu-diagnosis__option">
+												<input type="radio" name="diagnosis-q05" value="5" class="bdu-diagnosis__option-input" aria-label="5점, 매우 우수" />
+												<span class="bdu-diagnosis__option-text" aria-hidden="true"><em>5</em>매우<br>우수</span>
+											</label>
+										</div>
+									</fieldset>
+									<fieldset class="bdu-diagnosis__row">
+										<div class="bdu-diagnosis__row-text">양육자를 통해 유아의 기본 요구사항을 확인할 수 있다.</div>
+										<div class="bdu-diagnosis__row-options">
+											<label class="bdu-diagnosis__option">
+												<input type="radio" name="diagnosis-q06" value="1" class="bdu-diagnosis__option-input" aria-label="1점, 매우 미흡" />
+												<span class="bdu-diagnosis__option-text" aria-hidden="true"><em>1</em>매우<br>미흡</span>
+											</label>
+											<label class="bdu-diagnosis__option">
+												<input type="radio" name="diagnosis-q06" value="2" class="bdu-diagnosis__option-input" aria-label="2점, 대체로 미흡" />
+												<span class="bdu-diagnosis__option-text" aria-hidden="true"><em>2</em>대체로<br>미흡</span>
+											</label>
+											<label class="bdu-diagnosis__option">
+												<input type="radio" name="diagnosis-q06" value="3" class="bdu-diagnosis__option-input" aria-label="3점, 보통" />
+												<span class="bdu-diagnosis__option-text" aria-hidden="true"><em>3</em>보통</span>
+											</label>
+											<label class="bdu-diagnosis__option">
+												<input type="radio" name="diagnosis-q06" value="4" class="bdu-diagnosis__option-input" aria-label="4점, 대체로 우수" />
+												<span class="bdu-diagnosis__option-text" aria-hidden="true"><em>4</em>대체로<br>우수</span>
+											</label>
+											<label class="bdu-diagnosis__option">
+												<input type="radio" name="diagnosis-q06" value="5" class="bdu-diagnosis__option-input" aria-label="5점, 매우 우수" />
+												<span class="bdu-diagnosis__option-text" aria-hidden="true"><em>5</em>매우<br>우수</span>
+											</label>
+										</div>
+									</fieldset>
+								</div>
+							</div>
+							<div class="bdu-diagnosis__group">
+								<h3 class="bdu-diagnosis__group-title"><strong>아동</strong>을 둔 양육자와 면담하기</h3>
+								<div class="bdu-diagnosis__group-body">
+									<fieldset class="bdu-diagnosis__row">
+										<div class="bdu-diagnosis__row-text">양육자를 통해 아동을 둔 가족 특성을 확인할 수 있다.</div>
+										<div class="bdu-diagnosis__row-options">
+											<label class="bdu-diagnosis__option">
+												<input type="radio" name="diagnosis-q07" value="1" class="bdu-diagnosis__option-input" aria-label="1점, 매우 미흡" />
+												<span class="bdu-diagnosis__option-text" aria-hidden="true"><em>1</em>매우<br>미흡</span>
+											</label>
+											<label class="bdu-diagnosis__option">
+												<input type="radio" name="diagnosis-q07" value="2" class="bdu-diagnosis__option-input" aria-label="2점, 대체로 미흡" />
+												<span class="bdu-diagnosis__option-text" aria-hidden="true"><em>2</em>대체로<br>미흡</span>
+											</label>
+											<label class="bdu-diagnosis__option">
+												<input type="radio" name="diagnosis-q07" value="3" class="bdu-diagnosis__option-input" aria-label="3점, 보통" />
+												<span class="bdu-diagnosis__option-text" aria-hidden="true"><em>3</em>보통</span>
+											</label>
+											<label class="bdu-diagnosis__option">
+												<input type="radio" name="diagnosis-q07" value="4" class="bdu-diagnosis__option-input" aria-label="4점, 대체로 우수" />
+												<span class="bdu-diagnosis__option-text" aria-hidden="true"><em>4</em>대체로<br>우수</span>
+											</label>
+											<label class="bdu-diagnosis__option">
+												<input type="radio" name="diagnosis-q07" value="5" class="bdu-diagnosis__option-input" aria-label="5점, 매우 우수" />
+												<span class="bdu-diagnosis__option-text" aria-hidden="true"><em>5</em>매우<br>우수</span>
+											</label>
+										</div>
+									</fieldset>
+									<fieldset class="bdu-diagnosis__row">
+										<div class="bdu-diagnosis__row-text">양육자를 통해 아동의 특성을 확인할 수 있다.</div>
+										<div class="bdu-diagnosis__row-options">
+											<label class="bdu-diagnosis__option">
+												<input type="radio" name="diagnosis-q08" value="1" class="bdu-diagnosis__option-input" aria-label="1점, 매우 미흡" />
+												<span class="bdu-diagnosis__option-text" aria-hidden="true"><em>1</em>매우<br>미흡</span>
+											</label>
+											<label class="bdu-diagnosis__option">
+												<input type="radio" name="diagnosis-q08" value="2" class="bdu-diagnosis__option-input" aria-label="2점, 대체로 미흡" />
+												<span class="bdu-diagnosis__option-text" aria-hidden="true"><em>2</em>대체로<br>미흡</span>
+											</label>
+											<label class="bdu-diagnosis__option">
+												<input type="radio" name="diagnosis-q08" value="3" class="bdu-diagnosis__option-input" aria-label="3점, 보통" />
+												<span class="bdu-diagnosis__option-text" aria-hidden="true"><em>3</em>보통</span>
+											</label>
+											<label class="bdu-diagnosis__option">
+												<input type="radio" name="diagnosis-q08" value="4" class="bdu-diagnosis__option-input" aria-label="4점, 대체로 우수" />
+												<span class="bdu-diagnosis__option-text" aria-hidden="true"><em>4</em>대체로<br>우수</span>
+											</label>
+											<label class="bdu-diagnosis__option">
+												<input type="radio" name="diagnosis-q08" value="5" class="bdu-diagnosis__option-input" aria-label="5점, 매우 우수" />
+												<span class="bdu-diagnosis__option-text" aria-hidden="true"><em>5</em>매우<br>우수</span>
+											</label>
+										</div>
+									</fieldset>
+									<fieldset class="bdu-diagnosis__row">
+										<div class="bdu-diagnosis__row-text">양육자를 통해 아동의 기본 요구사항을 확인할 수 있다.</div>
+										<div class="bdu-diagnosis__row-options">
+											<label class="bdu-diagnosis__option">
+												<input type="radio" name="diagnosis-q09" value="1" class="bdu-diagnosis__option-input" aria-label="1점, 매우 미흡" />
+												<span class="bdu-diagnosis__option-text" aria-hidden="true"><em>1</em>매우<br>미흡</span>
+											</label>
+											<label class="bdu-diagnosis__option">
+												<input type="radio" name="diagnosis-q09" value="2" class="bdu-diagnosis__option-input" aria-label="2점, 대체로 미흡" />
+												<span class="bdu-diagnosis__option-text" aria-hidden="true"><em>2</em>대체로<br>미흡</span>
+											</label>
+											<label class="bdu-diagnosis__option">
+												<input type="radio" name="diagnosis-q09" value="3" class="bdu-diagnosis__option-input" aria-label="3점, 보통" />
+												<span class="bdu-diagnosis__option-text" aria-hidden="true"><em>3</em>보통</span>
+											</label>
+											<label class="bdu-diagnosis__option">
+												<input type="radio" name="diagnosis-q09" value="4" class="bdu-diagnosis__option-input" aria-label="4점, 대체로 우수" />
+												<span class="bdu-diagnosis__option-text" aria-hidden="true"><em>4</em>대체로<br>우수</span>
+											</label>
+											<label class="bdu-diagnosis__option">
+												<input type="radio" name="diagnosis-q09" value="5" class="bdu-diagnosis__option-input" aria-label="5점, 매우 우수" />
+												<span class="bdu-diagnosis__option-text" aria-hidden="true"><em>5</em>매우<br>우수</span>
+											</label>
+										</div>
+									</fieldset>
+								</div>
+							</div>
+							<div class="bdu-diagnosis__group">
+								<h3 class="bdu-diagnosis__group-title"><strong>다양한 가족</strong>의 양육자와 면담하기</h3>
+								<div class="bdu-diagnosis__group-body">
+									<fieldset class="bdu-diagnosis__row">
+										<div class="bdu-diagnosis__row-text">양육자를 통해 다문화가족을 둔 가족 특성을 확인할 수 있다.</div>
+										<div class="bdu-diagnosis__row-options">
+											<label class="bdu-diagnosis__option">
+												<input type="radio" name="diagnosis-q10" value="1" class="bdu-diagnosis__option-input" aria-label="1점, 매우 미흡" />
+												<span class="bdu-diagnosis__option-text" aria-hidden="true"><em>1</em>매우<br>미흡</span>
+											</label>
+											<label class="bdu-diagnosis__option">
+												<input type="radio" name="diagnosis-q10" value="2" class="bdu-diagnosis__option-input" aria-label="2점, 대체로 미흡" />
+												<span class="bdu-diagnosis__option-text" aria-hidden="true"><em>2</em>대체로<br>미흡</span>
+											</label>
+											<label class="bdu-diagnosis__option">
+												<input type="radio" name="diagnosis-q10" value="3" class="bdu-diagnosis__option-input" aria-label="3점, 보통" />
+												<span class="bdu-diagnosis__option-text" aria-hidden="true"><em>3</em>보통</span>
+											</label>
+											<label class="bdu-diagnosis__option">
+												<input type="radio" name="diagnosis-q10" value="4" class="bdu-diagnosis__option-input" aria-label="4점, 대체로 우수" />
+												<span class="bdu-diagnosis__option-text" aria-hidden="true"><em>4</em>대체로<br>우수</span>
+											</label>
+											<label class="bdu-diagnosis__option">
+												<input type="radio" name="diagnosis-q10" value="5" class="bdu-diagnosis__option-input" aria-label="5점, 매우 우수" />
+												<span class="bdu-diagnosis__option-text" aria-hidden="true"><em>5</em>매우<br>우수</span>
+											</label>
+										</div>
+									</fieldset>
+									<fieldset class="bdu-diagnosis__row">
+										<div class="bdu-diagnosis__row-text">양육자를 통해 다문화 아동의 기본 요구사항을 확인할 수 있다.</div>
+										<div class="bdu-diagnosis__row-options">
+											<label class="bdu-diagnosis__option">
+												<input type="radio" name="diagnosis-q11" value="1" class="bdu-diagnosis__option-input" aria-label="1점, 매우 미흡" />
+												<span class="bdu-diagnosis__option-text" aria-hidden="true"><em>1</em>매우<br>미흡</span>
+											</label>
+											<label class="bdu-diagnosis__option">
+												<input type="radio" name="diagnosis-q11" value="2" class="bdu-diagnosis__option-input" aria-label="2점, 대체로 미흡" />
+												<span class="bdu-diagnosis__option-text" aria-hidden="true"><em>2</em>대체로<br>미흡</span>
+											</label>
+											<label class="bdu-diagnosis__option">
+												<input type="radio" name="diagnosis-q11" value="3" class="bdu-diagnosis__option-input" aria-label="3점, 보통" />
+												<span class="bdu-diagnosis__option-text" aria-hidden="true"><em>3</em>보통</span>
+											</label>
+											<label class="bdu-diagnosis__option">
+												<input type="radio" name="diagnosis-q11" value="4" class="bdu-diagnosis__option-input" aria-label="4점, 대체로 우수" />
+												<span class="bdu-diagnosis__option-text" aria-hidden="true"><em>4</em>대체로<br>우수</span>
+											</label>
+											<label class="bdu-diagnosis__option">
+												<input type="radio" name="diagnosis-q11" value="5" class="bdu-diagnosis__option-input" aria-label="5점, 매우 우수" />
+												<span class="bdu-diagnosis__option-text" aria-hidden="true"><em>5</em>매우<br>우수</span>
+											</label>
+										</div>
+									</fieldset>
+									<fieldset class="bdu-diagnosis__row">
+										<div class="bdu-diagnosis__row-text">양육자를 통해 한부모가족의 아동의 특성을 확인할 수 있다.</div>
+										<div class="bdu-diagnosis__row-options">
+											<label class="bdu-diagnosis__option">
+												<input type="radio" name="diagnosis-q12" value="1" class="bdu-diagnosis__option-input" aria-label="1점, 매우 미흡" />
+												<span class="bdu-diagnosis__option-text" aria-hidden="true"><em>1</em>매우<br>미흡</span>
+											</label>
+											<label class="bdu-diagnosis__option">
+												<input type="radio" name="diagnosis-q12" value="2" class="bdu-diagnosis__option-input" aria-label="2점, 대체로 미흡" />
+												<span class="bdu-diagnosis__option-text" aria-hidden="true"><em>2</em>대체로<br>미흡</span>
+											</label>
+											<label class="bdu-diagnosis__option">
+												<input type="radio" name="diagnosis-q12" value="3" class="bdu-diagnosis__option-input" aria-label="3점, 보통" />
+												<span class="bdu-diagnosis__option-text" aria-hidden="true"><em>3</em>보통</span>
+											</label>
+											<label class="bdu-diagnosis__option">
+												<input type="radio" name="diagnosis-q12" value="4" class="bdu-diagnosis__option-input" aria-label="4점, 대체로 우수" />
+												<span class="bdu-diagnosis__option-text" aria-hidden="true"><em>4</em>대체로<br>우수</span>
+											</label>
+											<label class="bdu-diagnosis__option">
+												<input type="radio" name="diagnosis-q12" value="5" class="bdu-diagnosis__option-input" aria-label="5점, 매우 우수" />
+												<span class="bdu-diagnosis__option-text" aria-hidden="true"><em>5</em>매우<br>우수</span>
+											</label>
+										</div>
+									</fieldset>
+									<fieldset class="bdu-diagnosis__row">
+										<div class="bdu-diagnosis__row-text">양육자를 통해 한부모 아동의 기본 요구사항을 확인할 수 있다.</div>
+										<div class="bdu-diagnosis__row-options">
+											<label class="bdu-diagnosis__option">
+												<input type="radio" name="diagnosis-q13" value="1" class="bdu-diagnosis__option-input" aria-label="1점, 매우 미흡" />
+												<span class="bdu-diagnosis__option-text" aria-hidden="true"><em>1</em>매우<br>미흡</span>
+											</label>
+											<label class="bdu-diagnosis__option">
+												<input type="radio" name="diagnosis-q13" value="2" class="bdu-diagnosis__option-input" aria-label="2점, 대체로 미흡" />
+												<span class="bdu-diagnosis__option-text" aria-hidden="true"><em>2</em>대체로<br>미흡</span>
+											</label>
+											<label class="bdu-diagnosis__option">
+												<input type="radio" name="diagnosis-q13" value="3" class="bdu-diagnosis__option-input" aria-label="3점, 보통" />
+												<span class="bdu-diagnosis__option-text" aria-hidden="true"><em>3</em>보통</span>
+											</label>
+											<label class="bdu-diagnosis__option">
+												<input type="radio" name="diagnosis-q13" value="4" class="bdu-diagnosis__option-input" aria-label="4점, 대체로 우수" />
+												<span class="bdu-diagnosis__option-text" aria-hidden="true"><em>4</em>대체로<br>우수</span>
+											</label>
+											<label class="bdu-diagnosis__option">
+												<input type="radio" name="diagnosis-q13" value="5" class="bdu-diagnosis__option-input" aria-label="5점, 매우 우수" />
+												<span class="bdu-diagnosis__option-text" aria-hidden="true"><em>5</em>매우<br>우수</span>
+											</label>
+										</div>
+									</fieldset>
+									<fieldset class="bdu-diagnosis__row">
+										<div class="bdu-diagnosis__row-text">양육자를 통해 장애아동의 기본 요구사항을 확인할 수 있다.</div>
+										<div class="bdu-diagnosis__row-options">
+											<label class="bdu-diagnosis__option">
+												<input type="radio" name="diagnosis-q14" value="1" class="bdu-diagnosis__option-input" aria-label="1점, 매우 미흡" />
+												<span class="bdu-diagnosis__option-text" aria-hidden="true"><em>1</em>매우<br>미흡</span>
+											</label>
+											<label class="bdu-diagnosis__option">
+												<input type="radio" name="diagnosis-q14" value="2" class="bdu-diagnosis__option-input" aria-label="2점, 대체로 미흡" />
+												<span class="bdu-diagnosis__option-text" aria-hidden="true"><em>2</em>대체로<br>미흡</span>
+											</label>
+											<label class="bdu-diagnosis__option">
+												<input type="radio" name="diagnosis-q14" value="3" class="bdu-diagnosis__option-input" aria-label="3점, 보통" />
+												<span class="bdu-diagnosis__option-text" aria-hidden="true"><em>3</em>보통</span>
+											</label>
+											<label class="bdu-diagnosis__option">
+												<input type="radio" name="diagnosis-q14" value="4" class="bdu-diagnosis__option-input" aria-label="4점, 대체로 우수" />
+												<span class="bdu-diagnosis__option-text" aria-hidden="true"><em>4</em>대체로<br>우수</span>
+											</label>
+											<label class="bdu-diagnosis__option">
+												<input type="radio" name="diagnosis-q14" value="5" class="bdu-diagnosis__option-input" aria-label="5점, 매우 우수" />
+												<span class="bdu-diagnosis__option-text" aria-hidden="true"><em>5</em>매우<br>우수</span>
+											</label>
+										</div>
+									</fieldset>
+									<fieldset class="bdu-diagnosis__row">
+										<div class="bdu-diagnosis__row-text">양육자를 통해 장애아동의 기본 요구사항을 확인할 수 있다.</div>
+										<div class="bdu-diagnosis__row-options">
+											<label class="bdu-diagnosis__option">
+												<input type="radio" name="diagnosis-q15" value="1" class="bdu-diagnosis__option-input" aria-label="1점, 매우 미흡" />
+												<span class="bdu-diagnosis__option-text" aria-hidden="true"><em>1</em>매우<br>미흡</span>
+											</label>
+											<label class="bdu-diagnosis__option">
+												<input type="radio" name="diagnosis-q15" value="2" class="bdu-diagnosis__option-input" aria-label="2점, 대체로 미흡" />
+												<span class="bdu-diagnosis__option-text" aria-hidden="true"><em>2</em>대체로<br>미흡</span>
+											</label>
+											<label class="bdu-diagnosis__option">
+												<input type="radio" name="diagnosis-q15" value="3" class="bdu-diagnosis__option-input" aria-label="3점, 보통" />
+												<span class="bdu-diagnosis__option-text" aria-hidden="true"><em>3</em>보통</span>
+											</label>
+											<label class="bdu-diagnosis__option">
+												<input type="radio" name="diagnosis-q15" value="4" class="bdu-diagnosis__option-input" aria-label="4점, 대체로 우수" />
+												<span class="bdu-diagnosis__option-text" aria-hidden="true"><em>4</em>대체로<br>우수</span>
+											</label>
+											<label class="bdu-diagnosis__option">
+												<input type="radio" name="diagnosis-q15" value="5" class="bdu-diagnosis__option-input" aria-label="5점, 매우 우수" />
+												<span class="bdu-diagnosis__option-text" aria-hidden="true"><em>5</em>매우<br>우수</span>
+											</label>
+										</div>
+									</fieldset>
+								</div>
+							</div>
+						</div>
+
+						<div class="bdu-diagnosis__actions">
+							<button type="button" class="bdu-button bdu-button--result">결과확인</button>
+						</div>
+					</form>
+
+					<div class="bdu-diagnosis-result" hidden aria-live="polite">
+						<h2 class="bdu-diagnosis-result__header">사전 진단 결과</h2>
+						<div class="bdu-diagnosis-result__body">
+							<p class="bdu-diagnosis-result__score-line">
+								<strong class="bdu-diagnosis-mark">양육태도</strong>에 대한 진단 결과 점수는
+								<strong class="bdu-diagnosis-result__score">0</strong>점 입니다.
+							</p>
+							<p class="bdu-diagnosis-result__desc">
+								애정점수가 높으면 애정적인 양육태도를 가졌음을 의미합니다. 점수가 낮은 항목에 대해서는 더 노력하실 필요가 있습니다.<br>
+								8주 1강에서 사후 점검이 있을 예정입니다. 사전 진단과 사후 점검을 나중에 비교해 보세요.
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- 마음열기 -->
+			<section class="bdu-section page-0002 bdu-is-active" aria-labelledby="page0002-title">
+				<header class="bdu-page-head">
+					<div class="bdu-page-head__title-row">
+						<span class="bdu-icon bdu-icon--warm-up bdu-icon--page-head" aria-hidden="true"></span>
+						<h1 id="page0002-title" class="bdu-page-head__title">마음열기</h1>
+					</div>
+					<div class="bdu-page-head__intro-card">
+						<p class="bdu-page-head__intro">
+							학습에 들어가기 전, 다음 내용에 대해 생각해 봅시다.
+						</p>
+						<button type="button" class="bdu-button bdu-button--sound-boxed"
+							data-bdu-sound="../media/mp3/page-01-01.mp3" aria-pressed="false" aria-label="본문 내용 음성으로 듣기"></button>
+					</div>
+				</header>
+
+				<div class="bdu-warmup">
+					<ul class="bdu-warmup__list">
+						<li class="bdu-warmup__item">
+							<span class="bdu-warmup__icon bdu-icon bdu-icon--container" aria-hidden="true"></span>
+							<p class="bdu-warmup__text"><strong class="bdu-warmup__num">Q1.</strong> 여러분이 생각하는 건강한 상태란?</p>
+						</li>
+						<li class="bdu-warmup__item">
+							<span class="bdu-warmup__icon bdu-icon bdu-icon--container-1" aria-hidden="true"></span>
+							<p class="bdu-warmup__text"><strong class="bdu-warmup__num">Q2.</strong> 신체 및 정신적으로 편안하고 문제가 없는 상태인지 한번 체크를 해보시기 바랍니다.</p>
+						</li>
+						<li class="bdu-warmup__item">
+							<span class="bdu-warmup__icon bdu-icon bdu-icon--container-2" aria-hidden="true"></span>
+							<p class="bdu-warmup__text"><strong class="bdu-warmup__num">Q3.</strong> 학습자분들이 생각하는 우리아이의 건강상태는?</p>
+						</li>
+					</ul>
+				</div>
+			</section>
+			
+			<!-- 학습내용 및 목표 -->
+			<section class="bdu-section page-0003 bdu-is-active" aria-labelledby="page0003-title">
+				<header class="bdu-page-head">
+					<div class="bdu-page-head__title-row">
+						<span class="bdu-icon bdu-icon--learning-objectives bdu-icon--page-head" aria-hidden="true"></span>
+						<h1 id="page0003-title" class="bdu-page-head__title">학습내용 및 목표</h1>
+					</div>
+					<div class="bdu-page-head__intro-card">
+						<p class="bdu-page-head__intro">
+							이번 시간의 학습내용과 목표를 살펴본 후, 학습을 시작하시기 바랍니다.
+						</p>
+						<button type="button" class="bdu-button bdu-button--sound-boxed"
+							data-bdu-sound="../media/mp3/page-01-02.mp3" aria-pressed="false" aria-label="본문 내용 음성으로 듣기"></button>
+					</div>
+				</header>
+
+				<div class="bdu-overview">
+					<article class="bdu-overview__card">
+						<div class="bdu-overview__head">
+							<span class="bdu-overview__icon bdu-icon bdu-icon--tit-note" aria-hidden="true"></span>
+							<p class="bdu-overview__head-label">학습내용</p>
+						</div>
+						<ul class="bdu-overview__list" aria-label="학습내용 목록">
+							<li class="bdu-overview__item">
+								<span class="bdu-overview__item-icon bdu-overview__item-icon--video bdu-icon bdu-icon--list-video"
+									aria-hidden="true"></span>
+								<p class="bdu-overview__text">건강의 개념</p>
+							</li>
+							<li class="bdu-overview__item">
+								<span class="bdu-overview__item-icon bdu-overview__item-icon--video bdu-icon bdu-icon--list-video"
+									aria-hidden="true"></span>
+								<p class="bdu-overview__text">유아건강의 중요성</p>
+							</li>
+							<li class="bdu-overview__item">
+								<span class="bdu-overview__item-icon bdu-overview__item-icon--video bdu-icon bdu-icon--list-video"
+									aria-hidden="true"></span>
+								<p class="bdu-overview__text">유아건강 교육에 대한 교사의 역할</p>
+							</li>
+						</ul>
+					</article>
+
+					<article class="bdu-overview__card">
+						<div class="bdu-overview__head">
+							<span class="bdu-overview__icon bdu-icon bdu-icon--tit-goal" aria-hidden="true"></span>
+							<p class="bdu-overview__head-label">학습목표</p>
+						</div>
+						<ul class="bdu-overview__list" aria-label="학습목표 목록">
+							<li class="bdu-overview__item">
+								<span class="bdu-overview__item-icon bdu-overview__item-icon--goal bdu-icon bdu-icon--square-check"
+									aria-hidden="true"></span>
+								<p class="bdu-overview__text">건강의 개념 및 유아기 건강의 중요성에 대해 설명할 수 있다.</p>
+							</li>
+							<li class="bdu-overview__item">
+								<span class="bdu-overview__item-icon bdu-overview__item-icon--goal bdu-icon bdu-icon--square-check"
+									aria-hidden="true"></span>
+								<p class="bdu-overview__text">유아건강교육에 대한 교사자의 역할에 대해 작성할 수 있다.</p>
+							</li>
+						</ul>
+					</article>
+				</div>
+			</section>
+
+			<!-- 보조영상 -->
+			<section class="bdu-section page-0004 bdu-is-active" aria-labelledby="page0004-title">
+				<header class="bdu-page-head">
+					<div class="bdu-page-head__title-row">
+						<span class="bdu-icon bdu-icon--supplementary-video bdu-icon--page-head" aria-hidden="true"></span>
+						<h1 id="page0004-title" class="bdu-page-head__title">보조영상</h1>
+					</div>
+					<div class="bdu-page-head__intro-card">
+						<p class="bdu-page-head__intro">
+							수업에 들어가기 전, 학습자의 현재 양육태도를 알아볼 수 있도록 진단을 실시합니다.<br>
+							제시된 기준 항목을 보고 본인과 일치하는 수준에 체크해 보세요.
+						</p>
+						<button type="button" class="bdu-button bdu-button--sound-boxed"
+							data-bdu-sound="../media/mp3/page-01-06.mp3" aria-pressed="false" aria-label="본문 내용 음성으로 듣기"></button>
+					</div>
+				</header>
+
+				<div class="bdu-sup-video">
+					<h2 class="bdu-sup-video__heading">
+						<span class="bdu-sup-video__heading-icon bdu-icon bdu-icon--tit-video" aria-hidden="true"></span>
+						신중년의 품격, 세상을 더 풍요롭고 가치있게
+					</h2>
+
+					<figure class="bdu-sup-video__player">
+						<div class="bdu-sup-video__embed">
+							<iframe
+								src="https://www.youtube.com/embed/fIcAEQGrVQk?si=3g-mFxghEGip4G0X"
+								title="신중년의 품격, 세상을 더 풍요롭고 가치있게"
+								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+								referrerpolicy="strict-origin-when-cross-origin"
+								allowfullscreen></iframe>
+						</div>
+						<figcaption class="bdu-sup-video__source">
+							<span class="bdu-sup-video__source-badge">출처</span>
+							<span class="bdu-sup-video__source-text">학술연구정보서비스</span>
+						</figcaption>
+					</figure>
+				</div>
+			</section>
+			
+			<!-- 기타자료 -->
+			<section class="bdu-section page-0005 bdu-is-active" aria-labelledby="page0005-title">
+				<header class="bdu-page-head">
+					<div class="bdu-page-head__title-row">
+						<span class="bdu-icon bdu-icon--additional-resources bdu-icon--page-head" aria-hidden="true"></span>
+						<h1 id="page0005-title" class="bdu-page-head__title">기타자료</h1>
+					</div>
+					<div class="bdu-page-head__intro-card">
+						<p class="bdu-page-head__intro">
+							학습과 관련된 기타 자료를 확인해 봅시다.
+						</p>
+						<button type="button" class="bdu-button bdu-button--sound-boxed"
+							data-bdu-sound="../media/mp3/page-01-06.mp3" aria-pressed="false" aria-label="본문 내용 음성으로 듣기"></button>
+					</div>
+				</header>
+
+				<article class="bdu-board">
+					<header class="bdu-board__head">
+						<h2 class="bdu-board__title">
+							&ldquo;유보통합 과정서 어린이집 현실·전문성 훼손돼선 안 된다&rdquo;
+						</h2>
+						<p class="bdu-board__source">
+							<span class="bdu-board__source-badge">출처</span>
+							<span class="bdu-board__source-text">베이비 뉴스 기자</span>
+						</p>
+					</header>
+
+					<div class="bdu-board__body">
+						<p>
+							텍스트 기사내용 텍스트 기사내용 텍스트 기사내용 텍스트 기사내용 텍스트 기사내용 텍스트 기사내용 텍스트 기사내용 텍스트
+							기사내용 텍스트 기사내용 텍스트 기사내용 텍스트 기사내용 텍스트 기사내용 텍스트 기사내용 텍스트 기사내용 텍스트
+						</p>
+						<p>
+							기사내용 텍스트 기사내용 텍스트 기사내용 텍스트 기사내용 텍스트 기사내용 텍스트 기사내용 텍스트 기사내용 텍스트
+							기사내용 텍스트 기사내용 텍스트 기사내용 텍스트 기사내용 텍스트 기사내용 텍스트 기사내용 텍스트
+						</p>
+					</div>
+				</article>
+			</section>
+
+			<!-- 본학습 -->
+			<section class="bdu-section page-0006 bdu-is-active" aria-labelledby="page0006-title">
+
+				<header class="bdu-page-head">
+					<div class="bdu-page-head__title-row">
+						<span class="bdu-icon bdu-icon--additional-resources bdu-icon--page-head" aria-hidden="true"></span>
+						<h1 id="page0005-title" class="bdu-page-head__title">본학습</h1>
+					</div>
+				</header>
+
+				<figure class="bdu-lecture">
+					<div class="bdu-lecture__frame">
+						<video id="bdu-lecture-video" class="video-js vjs-big-play-centered" controls preload="metadata"
+							playsinline
+							title="본학습 강의 영상: 서울디지털대학교 부동산학과 최숙경"
+							poster="">
+							<source
+								src="../media/mp4/Saturn_rings_rotate_shooting_stars_349e018d13%20(1).mp4"
+								type="video/mp4" />
+							<p class="vjs-no-js">
+								동영상을 재생하려면 JavaScript를 활성화하고
+								<a href="https://videojs.com/html5-video-support/" target="_blank" rel="noopener noreferrer">HTML5
+									동영상을 지원하는 브라우저</a>를 사용해 주세요.
+							</p>
+						</video>
+					</div>
+					<figcaption class="bdu-lecture__caption">
+						서울디지털대학교 부동산학과 최숙경 입니다. 신중년의 품격, 세상을 더 풍요롭고
+					</figcaption>
+				</figure>
+			</section>
+
+			<!-- 적용하기 -->
+			<section class="bdu-section page-0007 bdu-is-active" aria-labelledby="page0007-title">
+				<header class="bdu-page-head">
+					<div class="bdu-page-head__title-row">
+						<span class="bdu-icon bdu-icon--apply bdu-icon--page-head" aria-hidden="true"></span>
+						<h1 id="page0006-title" class="bdu-page-head__title">적용하기</h1>
+					</div>
+					<div class="bdu-page-head__intro-card">
+						<p class="bdu-page-head__intro">
+							학습한 내용을 바탕으로 생활에 적용해 봅시다.
+						</p>
+						<button type="button" class="bdu-button bdu-button--sound-boxed"
+							data-bdu-sound="../media/mp3/page-01-06.mp3" aria-pressed="false" aria-label="본문 내용 음성으로 듣기"></button>
+					</div>
+				</header>
+
+				<div class="bdu-apply">
+					<p class="bdu-apply__prompt">
+						영아기의 여러 가지 행동이 운동능력의 세부항목 중<br>
+						어디에 속하는지 작성해 봅시다.
+					</p>
+
+					<form class="bdu-apply__form" action="#" method="post">
+						<label for="page0006-answer" class="bdu-visually-hidden">답변 작성</label>
+						<textarea id="page0006-answer" class="bdu-apply__textarea" name="answer" rows="8"
+							placeholder="글을 작성해 보세요"></textarea>
+
+						<div class="bdu-apply__actions">
+							<button type="submit" class="bdu-button bdu-apply__submit">저장하기</button>
+						</div>
+					</form>
+				</div>
+			</section>
+
+			<!-- 평가하기 -->
+			<section class="bdu-section page-0008 bdu-is-active" aria-labelledby="page0008-title">
+				<header class="bdu-page-head">
+					<div class="bdu-page-head__title-row">
+						<span class="bdu-icon bdu-icon--evaluation bdu-icon--page-head" aria-hidden="true"></span>
+						<h1 id="page0008-title" class="bdu-page-head__title">평가하기</h1>
+					</div>
+					<div class="bdu-page-head__intro-card">
+						<p class="bdu-page-head__intro">
+							학습한 내용을 바탕으로 생활에 적용해 봅시다.
+						</p>
+						<button type="button" class="bdu-button bdu-button--sound-boxed"
+							data-bdu-sound="../media/mp3/page-01-06.mp3" aria-pressed="false" aria-label="본문 내용 음성으로 듣기"></button>
+					</div>
+				</header>
+
+				<div class="bdu-quiz-tabs" role="tablist" aria-label="문제 번호">
+					<button type="button" class="bdu-quiz-tabs__btn bdu-is-active" role="tab" id="quiz-tab-1"
+						aria-selected="true" aria-controls="quiz-panel-1" tabindex="0">1</button>
+					<button type="button" class="bdu-quiz-tabs__btn" role="tab" id="quiz-tab-2"
+						aria-selected="false" aria-controls="quiz-panel-2" tabindex="-1">2</button>
+					<button type="button" class="bdu-quiz-tabs__btn" role="tab" id="quiz-tab-3"
+						aria-selected="false" aria-controls="quiz-panel-3" tabindex="-1">3</button>
+					<button type="button" class="bdu-quiz-tabs__btn" role="tab" id="quiz-tab-4"
+						aria-selected="false" aria-controls="quiz-panel-4" tabindex="-1">4</button>
+					<button type="button" class="bdu-quiz-tabs__btn" role="tab" id="quiz-tab-5"
+						aria-selected="false" aria-controls="quiz-panel-5" tabindex="-1">5</button>
+				</div>
+
+				<div class="bdu-quiz">
+					<div id="quiz-panel-1" class="bdu-quiz-panel bdu-is-active" role="tabpanel"
+						aria-labelledby="quiz-tab-1"
+						data-quiz-answer="x"
+						data-quiz-explain="영아교사는 양육자로서 역할이 강조되며 유아교사는 영아교사에 비해 더 전문적인 역할을 필요로 합니다.">
+						<p class="bdu-quiz-panel__question">
+							대체로 영아교사는 유아교사에 비해 더 전문적인 역할을 필요로 한다.
+						</p>
+						<fieldset class="bdu-quiz-ox">
+							<legend class="bdu-visually-hidden">Q1 정답 선택</legend>
+							<ul class="bdu-quiz-ox__list">
+								<li>
+									<label class="bdu-quiz-ox__label">
+										<input type="radio" name="quiz-q1" value="o" />
+										<span class="bdu-visually-hidden">O (맞음)</span>
+										<img src="../images/common/img_o_off.svg" alt="" class="bdu-quiz-ox__img bdu-quiz-ox__img--off" />
+										<img src="../images/common/img_o_on.svg" alt="" class="bdu-quiz-ox__img bdu-quiz-ox__img--on" />
+									</label>
+								</li>
+								<li>
+									<label class="bdu-quiz-ox__label">
+										<input type="radio" name="quiz-q1" value="x" />
+										<span class="bdu-visually-hidden">X (틀림)</span>
+										<img src="../images/common/img_x_off.svg" alt="" class="bdu-quiz-ox__img bdu-quiz-ox__img--off" />
+										<img src="../images/common/img_x_on.svg" alt="" class="bdu-quiz-ox__img bdu-quiz-ox__img--on" />
+									</label>
+								</li>
+							</ul>
+						</fieldset>
+						<div class="bdu-quiz-panel__actions">
+							<button type="button" class="bdu-button bdu-button--check">정답확인</button>
+						</div>
+						<div class="bdu-quiz-modal" hidden>
+							<div class="bdu-quiz-modal__overlay" data-quiz-modal-close></div>
+							<div class="bdu-quiz-modal__box" role="dialog" aria-modal="true"
+								aria-labelledby="quiz-modal-title-1">
+								<div class="bdu-quiz-modal__header">
+									<h2 id="quiz-modal-title-1" class="bdu-quiz-modal__title">정답 확인</h2>
+									<button type="button" class="bdu-quiz-modal__close" data-quiz-modal-close
+										aria-label="정답 확인 닫기">×</button>
+								</div>
+								<div class="bdu-quiz-modal__body">
+									<p class="bdu-quiz-modal__answer">
+										<span class="bdu-quiz-modal__label">정답</span>
+										<span class="bdu-quiz-modal__answer-value"></span>
+									</p>
+									<div class="bdu-quiz-modal__explain">
+										<p class="bdu-quiz-modal__explain-title">해설</p>
+										<p class="bdu-quiz-modal__explain-text"></p>
+									</div>
+								</div>
+								<div class="bdu-quiz-modal__footer">
+									<button type="button" class="bdu-button bdu-button--modal-close" data-quiz-modal-close>닫기</button>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div id="quiz-panel-2" class="bdu-quiz-panel bdu-quiz-panel--choice" role="tabpanel"
+						aria-labelledby="quiz-tab-2" hidden
+						data-quiz-answer="4"
+						data-quiz-explain="아이돌보미는 보호자의 육아방침과 영양 기준에 따라 식사·간식을 제공해야 합니다. 아이의 입맛만 맞추어 조리·제공하는 것은 공식 역할에 맞지 않습니다.">
+						<p class="bdu-quiz-panel__question">
+							아이돌보미의 역할은 공식적으로 규정한 것입니다. 다음 중 올바르지 않은 것은 무엇일까요?
+						</p>
+						<fieldset class="bdu-quiz-choice">
+							<legend class="bdu-visually-hidden">Q2 정답 선택</legend>
+
+							<ul class="bdu-quiz-choice__list">
+								<li class="bdu-quiz-choice__item">
+									<label class="bdu-quiz-choice__label">
+										<input type="radio" name="quiz-q2" value="1" class="bdu-quiz-choice__radio" />
+										<span class="bdu-quiz-choice__badge">1</span>
+										<span class="bdu-quiz-choice__text">아동의 안전한 보호 및 돌봄 업무를 수행한다.</span>
+									</label>
+								</li>
+								<li class="bdu-quiz-choice__item">
+									<label class="bdu-quiz-choice__label">
+										<input type="radio" name="quiz-q2" value="2" class="bdu-quiz-choice__radio" />
+										<span class="bdu-quiz-choice__badge">2</span>
+										<span class="bdu-quiz-choice__text">아동의 건강관리 및 응급조치 등 안전배려를 한다.</span>
+									</label>
+								</li>
+								<li class="bdu-quiz-choice__item">
+									<label class="bdu-quiz-choice__label">
+										<input type="radio" name="quiz-q2" value="3" class="bdu-quiz-choice__radio" />
+										<span class="bdu-quiz-choice__badge">3</span>
+										<span class="bdu-quiz-choice__text">서비스 대상 보호자의 육아방침을 존중한다.</span>
+									</label>
+								</li>
+								<li class="bdu-quiz-choice__item">
+									<label class="bdu-quiz-choice__label">
+										<input type="radio" name="quiz-q2" value="4" class="bdu-quiz-choice__radio" />
+										<span class="bdu-quiz-choice__badge">4</span>
+										<span class="bdu-quiz-choice__text">식사와 간식은 아이의 입맛에 맞게 조리하여 제공한다.</span>
+									</label>
+								</li>
+							</ul>
+						</fieldset>
+						<div class="bdu-quiz-panel__actions">
+							<button type="button" class="bdu-button bdu-button--check">정답확인</button>
+						</div>
+						<div class="bdu-quiz-modal" hidden>
+							<div class="bdu-quiz-modal__overlay" data-quiz-modal-close></div>
+							<div class="bdu-quiz-modal__box" role="dialog" aria-modal="true"
+								aria-labelledby="quiz-modal-title-2">
+								<div class="bdu-quiz-modal__header">
+									<h2 id="quiz-modal-title-2" class="bdu-quiz-modal__title">정답 확인</h2>
+									<button type="button" class="bdu-quiz-modal__close" data-quiz-modal-close
+										aria-label="정답 확인 닫기">×</button>
+								</div>
+								<div class="bdu-quiz-modal__body">
+									<p class="bdu-quiz-modal__answer">
+										<span class="bdu-quiz-modal__label">정답</span>
+										<span class="bdu-quiz-modal__answer-value"></span>
+									</p>
+									<div class="bdu-quiz-modal__explain">
+										<p class="bdu-quiz-modal__explain-title">해설</p>
+										<p class="bdu-quiz-modal__explain-text"></p>
+									</div>
+								</div>
+								<div class="bdu-quiz-modal__footer">
+									<button type="button" class="bdu-button bdu-button--modal-close" data-quiz-modal-close>닫기</button>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div id="quiz-panel-3" class="bdu-quiz-panel bdu-quiz-panel--blank" role="tabpanel"
+						aria-labelledby="quiz-tab-3" hidden
+						data-quiz-answer="놀이"
+						data-quiz-explain="듀이(Dewey)는 놀이를 유아의 신체·정서·인지·사회 발달을 도모하는 중요한 수단으로 보았습니다. 놀이를 통해 유아는 경험하고 탐색하며 전인적으로 성장합니다.">
+						<p class="bdu-quiz-panel__question">
+							다음의 빈칸에 들어갈 알맞은 단어를 작성해보세요.
+						</p>
+						<div class="bdu-quiz-blank__sentence">
+							<p>
+								Dewey는 (
+								<span class="bdu-quiz-blank__gap" aria-hidden="true">?</span>
+								)를 유아의 신체, 정서, 인지, 사회 발달을 도모하는 수단으로 간주하였다.
+							</p>
+						</div>
+						<div class="bdu-quiz-blank__input-wrap">
+							<label for="quiz-q3-input" class="bdu-visually-hidden">Q3 정답 입력</label>
+							<input type="text" id="quiz-q3-input" class="bdu-quiz-blank__input" name="quiz-q3"
+								placeholder="정답을 입력하세요." autocomplete="off" />
+						</div>
+						<div class="bdu-quiz-panel__actions">
+							<button type="button" class="bdu-button bdu-button--check">정답확인</button>
+						</div>
+						<div class="bdu-quiz-modal" hidden>
+							<div class="bdu-quiz-modal__overlay" data-quiz-modal-close></div>
+							<div class="bdu-quiz-modal__box" role="dialog" aria-modal="true"
+								aria-labelledby="quiz-modal-title-3">
+								<div class="bdu-quiz-modal__header">
+									<h2 id="quiz-modal-title-3" class="bdu-quiz-modal__title">정답 확인</h2>
+									<button type="button" class="bdu-quiz-modal__close" data-quiz-modal-close
+										aria-label="정답 확인 닫기">×</button>
+								</div>
+								<div class="bdu-quiz-modal__body">
+									<p class="bdu-quiz-modal__answer">
+										<span class="bdu-quiz-modal__label">정답</span>
+										<span class="bdu-quiz-modal__answer-value"></span>
+									</p>
+									<div class="bdu-quiz-modal__explain">
+										<p class="bdu-quiz-modal__explain-title">해설</p>
+										<p class="bdu-quiz-modal__explain-text"></p>
+									</div>
+								</div>
+								<div class="bdu-quiz-modal__footer">
+									<button type="button" class="bdu-button bdu-button--modal-close" data-quiz-modal-close>닫기</button>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div id="quiz-panel-4" class="bdu-quiz-panel bdu-quiz-panel--subjective" role="tabpanel"
+						aria-labelledby="quiz-tab-4" hidden
+						data-quiz-answer="모범 답안"
+						data-quiz-explain="① 가스 밸브를 즉시 잠근다. ② 감전·폭발 위험이 있으므로 전기 스위치는 누르지 않고 화재 확산을 막는다. ③ 초기 소화가 가능하면 습한 담요 등으로 불을 끈다. ④ 119에 신고하고, 연기를 피해 낮은 자세로 안전하게 대피한다. ⑤ 유아를 포함한 가족의 안전을 최우선으로 보호한다.">
+						<p class="bdu-quiz-panel__question">
+							가정에서 가스로 인한 “화재가 발생하였을 때 대처방안”에 대해 기술해보세요.
+						</p>
+						<div class="bdu-quiz-subjective">
+							<label for="quiz-q4-input" class="bdu-visually-hidden">Q4 서술형 답안 입력</label>
+							<textarea id="quiz-q4-input" class="bdu-quiz-subjective__textarea" name="quiz-q4"
+								rows="12" placeholder="정답을 입력하세요."></textarea>
+						</div>
+						<div class="bdu-quiz-panel__actions">
+							<button type="button" class="bdu-button bdu-button--check">정답확인</button>
+						</div>
+						<div class="bdu-quiz-modal" hidden>
+							<div class="bdu-quiz-modal__overlay" data-quiz-modal-close></div>
+							<div class="bdu-quiz-modal__box" role="dialog" aria-modal="true"
+								aria-labelledby="quiz-modal-title-4">
+								<div class="bdu-quiz-modal__header">
+									<h2 id="quiz-modal-title-4" class="bdu-quiz-modal__title">정답 확인</h2>
+									<button type="button" class="bdu-quiz-modal__close" data-quiz-modal-close
+										aria-label="정답 확인 닫기">×</button>
+								</div>
+								<div class="bdu-quiz-modal__body">
+									<p class="bdu-quiz-modal__answer">
+										<span class="bdu-quiz-modal__label">정답</span>
+										<span class="bdu-quiz-modal__answer-value"></span>
+									</p>
+									<div class="bdu-quiz-modal__explain">
+										<p class="bdu-quiz-modal__explain-title">해설</p>
+										<p class="bdu-quiz-modal__explain-text"></p>
+									</div>
+								</div>
+								<div class="bdu-quiz-modal__footer">
+									<button type="button" class="bdu-button bdu-button--modal-close" data-quiz-modal-close>닫기</button>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div id="quiz-panel-5" class="bdu-quiz-panel bdu-quiz-panel--match" role="tabpanel"
+						aria-labelledby="quiz-tab-5" hidden
+						data-quiz-explain="1. 전화 — C. 알렉산더 그레이엄 벨 / 2. 전구 — B. 토머스 에디슨 / 3. 비행기 — A. 라이트 형제">
+						<div class="bdu-quiz-panel__question">
+							<p class="bdu-quiz-panel__question-text">
+								다음 보기에서 서로 연관된 항목끼리 올바르게 짝지어 보세요.
+							</p>
+							<p class="bdu-quiz-match__hint">왼쪽 연결점에서 드래그하여 오른쪽 연결점까지 선을 그어 주세요.</p>
+						</div>
+						<div class="bdu-quiz-match">
+							<div class="bdu-quiz-match__board">
+								<ul class="bdu-quiz-match__col bdu-quiz-match__col--left">
+									<li class="bdu-quiz-match__row">
+										<span class="bdu-quiz-match__badge">
+											<span class="bdu-quiz-match__num">1.</span>
+											<span class="bdu-quiz-match__text">전화</span>
+										</span>
+										<button type="button" class="bdu-quiz-match__node" data-match-side="left"
+											data-match-id="1" aria-label="1번 항목 연결점"></button>
+									</li>
+									<li class="bdu-quiz-match__row">
+										<span class="bdu-quiz-match__badge">
+											<span class="bdu-quiz-match__num">2.</span>
+											<span class="bdu-quiz-match__text">전구</span>
+										</span>
+										<button type="button" class="bdu-quiz-match__node" data-match-side="left"
+											data-match-id="2" aria-label="2번 항목 연결점"></button>
+									</li>
+									<li class="bdu-quiz-match__row">
+										<span class="bdu-quiz-match__badge">
+											<span class="bdu-quiz-match__num">3.</span>
+											<span class="bdu-quiz-match__text">비행기</span>
+										</span>
+										<button type="button" class="bdu-quiz-match__node" data-match-side="left"
+											data-match-id="3" aria-label="3번 항목 연결점"></button>
+									</li>
+								</ul>
+								<canvas class="bdu-quiz-match__canvas" aria-hidden="true"></canvas>
+								<ul class="bdu-quiz-match__col bdu-quiz-match__col--right">
+									<li class="bdu-quiz-match__row">
+										<button type="button" class="bdu-quiz-match__node" data-match-side="right"
+											data-match-id="a" aria-label="A 항목 연결점"></button>
+										<span class="bdu-quiz-match__badge">
+											<span class="bdu-quiz-match__num">A.</span>
+											<span class="bdu-quiz-match__text">라이트 형제</span>
+										</span>
+									</li>
+									<li class="bdu-quiz-match__row">
+										<button type="button" class="bdu-quiz-match__node" data-match-side="right"
+											data-match-id="b" aria-label="B 항목 연결점"></button>
+										<span class="bdu-quiz-match__badge">
+											<span class="bdu-quiz-match__num">B.</span>
+											<span class="bdu-quiz-match__text">토머스 에디슨</span>
+										</span>
+									</li>
+									<li class="bdu-quiz-match__row">
+										<button type="button" class="bdu-quiz-match__node" data-match-side="right"
+											data-match-id="c" aria-label="C 항목 연결점"></button>
+										<span class="bdu-quiz-match__badge">
+											<span class="bdu-quiz-match__num">C.</span>
+											<span class="bdu-quiz-match__text">알렉산더 그레이엄 벨</span>
+										</span>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="bdu-quiz-panel__actions">
+							<button type="button" class="bdu-button bdu-button--reset" data-quiz-match-reset>다시선택</button>
+							<button type="button" class="bdu-button bdu-button--check">정답확인</button>
+						</div>
+						<div class="bdu-quiz-modal" hidden>
+							<div class="bdu-quiz-modal__overlay" data-quiz-modal-close></div>
+							<div class="bdu-quiz-modal__box" role="dialog" aria-modal="true"
+								aria-labelledby="quiz-modal-title-5">
+								<div class="bdu-quiz-modal__header">
+									<h2 id="quiz-modal-title-5" class="bdu-quiz-modal__title">정답 확인</h2>
+									<button type="button" class="bdu-quiz-modal__close" data-quiz-modal-close
+										aria-label="정답 확인 닫기">×</button>
+								</div>
+								<div class="bdu-quiz-modal__body">
+									<p class="bdu-quiz-modal__answer">
+										<span class="bdu-quiz-modal__label">정답</span>
+										<span class="bdu-quiz-modal__answer-value"></span>
+									</p>
+									<div class="bdu-quiz-modal__explain">
+										<p class="bdu-quiz-modal__explain-title">해설</p>
+										<p class="bdu-quiz-modal__explain-text"></p>
+									</div>
+								</div>
+								<div class="bdu-quiz-modal__footer">
+									<button type="button" class="bdu-button bdu-button--modal-close" data-quiz-modal-close>닫기</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="bdu-notice-modal" hidden>
+					<div class="bdu-notice-modal__overlay" data-notice-modal-close></div>
+					<div class="bdu-notice-modal__box" role="alertdialog" aria-modal="true"
+						aria-labelledby="quiz-notice-title">
+						<div class="bdu-notice-modal__header">
+							<h2 id="quiz-notice-title" class="bdu-notice-modal__title">안내</h2>
+							<button type="button" class="bdu-notice-modal__close" data-notice-modal-close
+								aria-label="안내 닫기">×</button>
+						</div>
+						<div class="bdu-notice-modal__body">
+							<p class="bdu-notice-modal__message"></p>
+						</div>
+						<div class="bdu-notice-modal__footer">
+							<button type="button" class="bdu-button bdu-button--modal-close" data-notice-modal-close>확인</button>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- 학습정리 -->
+			<section class="bdu-section page-0009 bdu-is-active" aria-labelledby="page0009-title">
+				<header class="bdu-page-head">
+					<div class="bdu-page-head__title-row">
+						<span class="bdu-icon bdu-icon--learning-summary bdu-icon--page-head" aria-hidden="true"></span>
+						<h1 id="page0009-title" class="bdu-page-head__title">학습정리</h1>
+					</div>
+					<div class="bdu-page-head__intro-card">
+						<p class="bdu-page-head__intro">
+							학습한 내용을 키워드로 정리해 봅시다.
+						</p>
+						<button type="button" class="bdu-button bdu-button--sound-boxed"
+							data-bdu-sound="../media/mp3/page-01-06.mp3" aria-pressed="false" aria-label="본문 내용 음성으로 듣기"></button>
+					</div>
+				</header>
+
+				<div class="bdu-summary">
+					<section class="bdu-summary__section" aria-labelledby="summary-heading-1">
+						<h2 id="summary-heading-1" class="bdu-summary__heading">
+							<span class="bdu-summary__badge" aria-hidden="true">1</span>
+							아이돌보미, 나는 누구인가?
+						</h2>
+						<ul class="bdu-summary__list">
+							<li class="bdu-summary__item">부모의 빈자리를 채우는 따뜻한 부모역할</li>
+							<li class="bdu-summary__item">육아경험의 노하우 전수와 새로운 양육방식을 실천하는 육아 전문가</li>
+						</ul>
+					</section>
+					<section class="bdu-summary__section" aria-labelledby="summary-heading-2">
+						<h2 id="summary-heading-2" class="bdu-summary__heading">
+							<span class="bdu-summary__badge" aria-hidden="true">2</span>
+							아이돌보미, 나는 어떤 역할을 수행하는가?
+						</h2>
+						<ul class="bdu-summary__list">
+							<li class="bdu-summary__item">아동의 안전한 보호 및 돌봄 업무 수행</li>
+							<li class="bdu-summary__item">아동의 건강관리 및 응급조치 등 안전배려</li>
+						</ul>
+					</section>
+				</div>
+			</section>
+
+			<!-- 용어사전 -->
+			<section class="bdu-section page-0010 bdu-is-active" aria-labelledby="page0010-title">
+				<header class="bdu-page-head">
+					<div class="bdu-page-head__title-row">
+						<span class="bdu-icon bdu-icon--glossary bdu-icon--page-head" aria-hidden="true"></span>
+						<h1 id="page0010-title" class="bdu-page-head__title">용어사전</h1>
+					</div>
+					<div class="bdu-page-head__intro-card">
+						<p class="bdu-page-head__intro">
+							학술 관련 용어를 초성별로 확인할 수 있어요.
+						</p>
+						<button type="button" class="bdu-button bdu-button--sound-boxed"
+							data-bdu-sound="../media/mp3/page-01-06.mp3" aria-pressed="false" aria-label="본문 내용 음성으로 듣기"></button>
+					</div>
+				</header>
+
+				<div class="bdu-glossary">
+					<div class="bdu-glossary__keywords">
+						<div class="bdu-glossary__key-row" role="group" aria-label="한글 초성 검색">
+							<button type="button" class="bdu-glossary__key bdu-is-active" aria-pressed="true">ㄱ</button>
+							<button type="button" class="bdu-glossary__key" aria-pressed="false">ㄴ</button>
+							<button type="button" class="bdu-glossary__key" aria-pressed="false">ㄷ</button>
+							<button type="button" class="bdu-glossary__key" aria-pressed="false">ㄹ</button>
+							<button type="button" class="bdu-glossary__key" aria-pressed="false">ㅁ</button>
+							<button type="button" class="bdu-glossary__key" aria-pressed="false">ㅂ</button>
+							<button type="button" class="bdu-glossary__key" aria-pressed="false">ㅅ</button>
+							<button type="button" class="bdu-glossary__key" aria-pressed="false">ㅇ</button>
+							<button type="button" class="bdu-glossary__key" aria-pressed="false">ㅈ</button>
+							<button type="button" class="bdu-glossary__key" aria-pressed="false">ㅊ</button>
+							<button type="button" class="bdu-glossary__key" aria-pressed="false">ㅋ</button>
+							<button type="button" class="bdu-glossary__key" aria-pressed="false">ㅌ</button>
+							<button type="button" class="bdu-glossary__key" aria-pressed="false">ㅍ</button>
+							<button type="button" class="bdu-glossary__key" aria-pressed="false">ㅎ</button>
+						</div>
+						<div class="bdu-glossary__key-row" role="group" aria-label="영문 검색">
+							<button type="button" class="bdu-glossary__key" aria-pressed="false">A</button>
+							<button type="button" class="bdu-glossary__key" aria-pressed="false">B</button>
+							<button type="button" class="bdu-glossary__key" aria-pressed="false">C</button>
+							<button type="button" class="bdu-glossary__key" aria-pressed="false">D</button>
+							<button type="button" class="bdu-glossary__key" aria-pressed="false">E</button>
+							<button type="button" class="bdu-glossary__key" aria-pressed="false">F</button>
+							<button type="button" class="bdu-glossary__key" aria-pressed="false">G</button>
+							<button type="button" class="bdu-glossary__key" aria-pressed="false">H</button>
+							<button type="button" class="bdu-glossary__key" aria-pressed="false">I</button>
+							<button type="button" class="bdu-glossary__key" aria-pressed="false">J</button>
+							<button type="button" class="bdu-glossary__key" aria-pressed="false">K</button>
+							<button type="button" class="bdu-glossary__key" aria-pressed="false">L</button>
+							<button type="button" class="bdu-glossary__key" aria-pressed="false">M</button>
+							<button type="button" class="bdu-glossary__key" aria-pressed="false">N</button>
+							<button type="button" class="bdu-glossary__key" aria-pressed="false">O</button>
+							<button type="button" class="bdu-glossary__key" aria-pressed="false">P</button>
+							<button type="button" class="bdu-glossary__key" aria-pressed="false">Q</button>
+							<button type="button" class="bdu-glossary__key" aria-pressed="false">R</button>
+							<button type="button" class="bdu-glossary__key" aria-pressed="false">S</button>
+							<button type="button" class="bdu-glossary__key" aria-pressed="false">T</button>
+							<button type="button" class="bdu-glossary__key" aria-pressed="false">U</button>
+							<button type="button" class="bdu-glossary__key" aria-pressed="false">V</button>
+							<button type="button" class="bdu-glossary__key" aria-pressed="false">W</button>
+							<button type="button" class="bdu-glossary__key" aria-pressed="false">X</button>
+							<button type="button" class="bdu-glossary__key" aria-pressed="false">Y</button>
+							<button type="button" class="bdu-glossary__key" aria-pressed="false">Z</button>
+						</div>
+					</div>
+
+					<dl class="bdu-glossary__list">
+						<div class="bdu-glossary__item">
+							<dt class="bdu-glossary__term">가격가변제[variable pricing]</dt>
+							<dd class="bdu-glossary__desc">동일 상품을 고객별 상활별로 각기 다른 가격에 판매하는 마케팅 전략</dd>
+						</div>
+						<div class="bdu-glossary__item">
+							<dt class="bdu-glossary__term">가격가변제[variable pricing]</dt>
+							<dd class="bdu-glossary__desc">동일 상품을 고객별 상활별로 각기 다른 가격에 판매하는 마케팅 전략 동일 상품을 고객별 상활별로 각기 다른 가격에 판매하는 마케팅 전략 동일 상품을 고객별 상활별로 각기 다른 가격에 판매하는 마케팅 전략 동일 상품을 고객별 상활별로 각기 다른 가격에 판매하는 마케팅 전략동일 상품을 고객별 상활별로 각기 다른 가격에 판매하는 마케팅 전략 동일 상품을 고객별 상활별로 각기 다른 가격에 판매하는 마케팅 전략동일 상품을 고객별 상활별로 각기 다른 가격에 판매하는 마케팅 전략 동일 상품을 고객별 상활별로 각기 다른 가격에 판매하는 마케팅 전략</dd>
+						</div>
+						<div class="bdu-glossary__item">
+							<dt class="bdu-glossary__term">가격가변제[variable pricing]</dt>
+							<dd class="bdu-glossary__desc">동일 상품을 고객별 상활별로 각기 다른 가격에 판매하는 마케팅 전략 동일 상품을 고객별 상활별로 각기 다른 가격에 판매하는 마케팅 전략 동일 상품을 고객별 상활별로 각기 다른 가격에 판매하는 마케팅 전략 동일 상품을 고객별 상활별로 각기 다른 가격에 판매하는 마케팅 전략동일 상품을 고객별 상활별로 각기 다른 가격에 판매하는 마케팅 전략 동일 상품을 고객별 상활별로 각기 다른 가격에 판매하는 마케팅 전략동일 상품을 고객별 상활별로 각기 다른 가격에 판매하는 마케팅 전략 동일 상품을 고객별 상활별로 각기 다른 가격에 판매하는 마케팅 전략</dd>
+						</div>
+					</dl>
+				</div>
+			</section>
+
+			<!-- 연관학위논문 -->
+			<section class="bdu-section page-0011 bdu-is-active" aria-labelledby="page0011-title">
+				<header class="bdu-page-head">
+					<div class="bdu-page-head__title-row">
+						<span class="bdu-icon bdu-icon--related-thesis bdu-icon--page-head" aria-hidden="true"></span>
+						<h1 id="page0011-title" class="bdu-page-head__title">연관학위논문</h1>
+					</div>
+					<div class="bdu-page-head__intro-card">
+						<p class="bdu-page-head__intro">
+							학습과 관련된 논문을 살펴봅시다.
+						</p>
+						<button type="button" class="bdu-button bdu-button--sound-boxed"
+							data-bdu-sound="../media/mp3/page-01-06.mp3" aria-pressed="false" aria-label="본문 내용 음성으로 듣기"></button>
+					</div>
+				</header>
+
+				<ul class="bdu-thesis-list">
+					<li class="bdu-thesis-list__item">
+						<p class="bdu-thesis-list__title">
+							어린이집 종사자의 자아존중감과 책임감에 영향을 미치는 요인 연구어린이집 종사자의 자아존중감과 책임감에 영향을 미치는 요인 연구요인 연구 어린이집 종사자의 자아존중감과 책임감에 영향을 미치는 요인 연구어린이집 종사자의 자아존중감과 책임감에 영향을 미치는 요인 연구요인 연구
+						</p>
+						<a class="bdu-thesis-list__link" href="#" target="_blank" rel="noopener noreferrer"
+							aria-label="새 창에서 논문 바로가기: 어린이집 종사자의 자아존중감과 책임감에 영향을 미치는 요인 연구">
+							<span class="bdu-thesis-list__link-text">논문 바로가기</span>
+							<span class="bdu-icon bdu-icon--link-outer-sm" aria-hidden="true"></span>
+						</a>
+					</li>
+					<li class="bdu-thesis-list__item">
+						<p class="bdu-thesis-list__title">
+							어린이집 종사자의 자아존중감과 책임감에 영향을 미치는 요인 연구
+						</p>
+						<a class="bdu-thesis-list__link" href="#" target="_blank" rel="noopener noreferrer"
+							aria-label="새 창에서 논문 바로가기: 어린이집 종사자의 자아존중감과 책임감에 영향을 미치는 요인 연구">
+							<span class="bdu-thesis-list__link-text">논문 바로가기</span>
+							<span class="bdu-icon bdu-icon--link-outer-sm" aria-hidden="true"></span>
+						</a>
+					</li>
+					<li class="bdu-thesis-list__item">
+						<p class="bdu-thesis-list__title">
+							어린이집 종사자의 자아존중감과 책임감에 영향
+						</p>
+						<a class="bdu-thesis-list__link" href="#" target="_blank" rel="noopener noreferrer"
+							aria-label="새 창에서 논문 바로가기: 어린이집 종사자의 자아존중감과 책임감에 영향">
+							<span class="bdu-thesis-list__link-text">논문 바로가기</span>
+							<span class="bdu-icon bdu-icon--link-outer-sm" aria-hidden="true"></span>
+						</a>
+					</li>
+				</ul>
+			</section>
+		</main>
+	</div>
+
+	<script src="../js/main.js"></script>
+	<script src="../libs/videojs/video.min.js"></script>
+	<script>
+		videojs('bdu-lecture-video', {
+			fluid: false,
+			fill: true,
+			responsive: true,
+			playbackRates: [0.5, 0.75, 1, 1.25, 1.5],
+		});
+	</script>
+</body>
+
+</html>

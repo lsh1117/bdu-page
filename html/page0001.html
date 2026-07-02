@@ -1,0 +1,557 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>사전진단 - 양육자와 면담하기</title>
+	<link rel="stylesheet" href="../css/app.css" />
+</head>
+
+<body class="page-0001">
+
+	<div class="bdu-container">
+		<div class="bdu-content-head">
+			<button type="button" class="bdu-button bdu-button--lnb-open" aria-controls="lnb" aria-expanded="false"
+				aria-label="학습 메뉴 열기">
+				<span class="bdu-icon bdu-icon--btn-lnb-off" aria-hidden="true"></span>
+				<span class="bdu-button__label">메뉴열기</span>
+			</button>
+		</div>
+
+		<div class="bdu-lnb-overlay" hidden></div>
+
+		<nav id="lnb" class="bdu-lnb bdu-lnb--panel" aria-label="학습 메뉴">
+			<div class="bdu-lnb-header">
+				<button type="button" class="bdu-button bdu-button--lnb-close" aria-controls="lnb" aria-expanded="false"
+					aria-label="학습 메뉴 닫기">
+					<span class="bdu-icon bdu-icon--btn-lnb-on" aria-hidden="true"></span>
+				</button>
+			</div>
+			<ul class="bdu-menu-list bdu-menu-list--panel">
+				<li class="bdu-menu-item bdu-menu-item--panel bdu-is-active">
+					<a href="page0001.html">
+						<span class="bdu-icon bdu-icon--menu1 bdu-icon--menu" aria-hidden="true"></span>
+						<span class="bdu-menu-item__label">사전진단</span>
+						<span class="bdu-menu-item__arrow" aria-hidden="true"></span>
+					</a>
+				</li>
+				<li class="bdu-menu-item bdu-menu-item--panel">
+					<a href="page0002.html">
+						<span class="bdu-icon bdu-icon--menu2 bdu-icon--menu" aria-hidden="true"></span>
+						<span class="bdu-menu-item__label">마음열기</span>
+						<span class="bdu-menu-item__arrow" aria-hidden="true"></span>
+					</a>
+				</li>
+				<li class="bdu-menu-item bdu-menu-item--panel">
+					<a href="page0004.html">
+						<span class="bdu-icon bdu-icon--menu3 bdu-icon--menu" aria-hidden="true"></span>
+						<span class="bdu-menu-item__label">학습내용 및 목표</span>
+						<span class="bdu-menu-item__arrow" aria-hidden="true"></span>
+					</a>
+				</li>
+				<li class="bdu-menu-item bdu-menu-item--panel bdu-menu-item--highlight">
+					<a href="index.html">
+						<span class="bdu-icon bdu-icon--menu4 bdu-icon--menu" aria-hidden="true"></span>
+						<span class="bdu-menu-item__label">본학습</span>
+						<span class="bdu-menu-item__arrow" aria-hidden="true"></span>
+					</a>
+				</li>
+				<li class="bdu-menu-item bdu-menu-item--panel">
+					<a href="index.html">
+						<span class="bdu-icon bdu-icon--menu5 bdu-icon--menu" aria-hidden="true"></span>
+						<span class="bdu-menu-item__label">생각해보기 · 적용하기</span>
+						<span class="bdu-menu-item__arrow" aria-hidden="true"></span>
+					</a>
+				</li>
+				<li class="bdu-menu-item bdu-menu-item--panel">
+					<a href="index.html">
+						<span class="bdu-icon bdu-icon--menu6 bdu-icon--menu" aria-hidden="true"></span>
+						<span class="bdu-menu-item__label">평가하기</span>
+					</a>
+				</li>
+				<li class="bdu-menu-item bdu-menu-item--panel">
+					<a href="index.html">
+						<span class="bdu-icon bdu-icon--menu7 bdu-icon--menu" aria-hidden="true"></span>
+						<span class="bdu-menu-item__label">학습정리</span>
+					</a>
+				</li>
+				<li class="bdu-menu-item bdu-menu-item--panel">
+					<a href="#">
+						<span class="bdu-icon bdu-icon--menu8 bdu-icon--menu" aria-hidden="true"></span>
+						<span class="bdu-menu-item__label">다음강의 주체</span>
+					</a>
+				</li>
+			</ul>
+		</nav>
+
+		<main class="bdu-page">
+			<section class="bdu-section page-0001 bdu-is-active" aria-labelledby="page0001-title">
+				<header class="bdu-page-head">
+					<div class="bdu-page-head__title-row">
+						<span class="bdu-icon bdu-icon--pre-assessment bdu-icon--page-head" aria-hidden="true"></span>
+						<h1 id="page0001-title" class="bdu-page-head__title">사전진단</h1>
+					</div>
+					<div class="bdu-page-head__intro-card">
+						<p class="bdu-page-head__intro">
+							수업에 들어가기 전, 학습자의 현재 양육태도를 알아볼 수 있도록 진단을 실시합니다.<br>
+							제시된 기준 항목을 보고 본인과 일치하는 수준에 체크해 보세요.
+						</p>
+						<button type="button" class="bdu-button bdu-button--sound-boxed"
+							data-bdu-sound="../media/mp3/page-01-06.mp3" aria-pressed="false" aria-label="본문 내용 음성으로 듣기"></button>
+					</div>
+				</header>
+
+				<div class="bdu-diagnosis">
+					<div class="bdu-diagnosis__head">
+						<h2 class="bdu-diagnosis__title">양육자와 면담하기 사전 진단 체크리스트</h2>
+						<div class="bdu-diagnosis__legend" aria-label="배점 안내">
+							<span class="bdu-diagnosis__legend-label">배점</span>
+							<ul class="bdu-diagnosis__legend-list">
+								<li class="bdu-diagnosis__legend-item"><span class="bdu-diagnosis__legend-num">1</span> 매우 미흡</li>
+								<li class="bdu-diagnosis__legend-item"><span class="bdu-diagnosis__legend-num">2</span> 대체로 미흡</li>
+								<li class="bdu-diagnosis__legend-item"><span class="bdu-diagnosis__legend-num">3</span> 보통</li>
+								<li class="bdu-diagnosis__legend-item"><span class="bdu-diagnosis__legend-num">4</span> 대체로 우수</li>
+								<li class="bdu-diagnosis__legend-item"><span class="bdu-diagnosis__legend-num">5</span> 매우 우수</li>
+							</ul>
+						</div>
+					</div>
+
+					<form class="bdu-diagnosis__form" action="#" method="post">
+						<div class="bdu-diagnosis__list" aria-describedby="page0001-diagnosis-desc">
+							<div class="bdu-diagnosis__head" aria-hidden="true">
+								<div>
+									<p id="page0001-diagnosis-desc" class="bdu-diagnosis__list-lead">다음 문항들에 대해 본인과 일치하는 수준에 체크해 보세요.</p>
+								</div>
+								<div>
+									<span class="bdu-diagnosis__cols-item"><em>1</em>매우<br>미흡</span>
+									<span class="bdu-diagnosis__cols-item"><em>2</em>대체로<br>미흡</span>
+									<span class="bdu-diagnosis__cols-item"><em>3</em>보통</span>
+									<span class="bdu-diagnosis__cols-item"><em>4</em>대체로<br>우수</span>
+									<span class="bdu-diagnosis__cols-item"><em>5</em>매우<br>우수</span>
+								</div>
+							</div>
+							<div class="bdu-diagnosis__group">
+								<h3 class="bdu-diagnosis__group-title"><strong>영아</strong>를 둔 양육자와 면담하기</h3>
+								<div class="bdu-diagnosis__group-body">
+									<fieldset class="bdu-diagnosis__row">
+										<div class="bdu-diagnosis__row-text">양육자를 통해 영아를 둔 가족 특성을 확인할 수 있다.</div>
+										<div class="bdu-diagnosis__row-options">
+											<label class="bdu-diagnosis__option">
+												<input type="radio" name="diagnosis-q01" value="1" class="bdu-diagnosis__option-input" aria-label="1점, 매우 미흡" />
+												<span class="bdu-diagnosis__option-text" aria-hidden="true"><em>1</em>매우<br>미흡</span>
+											</label>
+											<label class="bdu-diagnosis__option">
+												<input type="radio" name="diagnosis-q01" value="2" class="bdu-diagnosis__option-input" aria-label="2점, 대체로 미흡" />
+												<span class="bdu-diagnosis__option-text" aria-hidden="true"><em>2</em>대체로<br>미흡</span>
+											</label>
+											<label class="bdu-diagnosis__option">
+												<input type="radio" name="diagnosis-q01" value="3" class="bdu-diagnosis__option-input" aria-label="3점, 보통" />
+												<span class="bdu-diagnosis__option-text" aria-hidden="true"><em>3</em>보통</span>
+											</label>
+											<label class="bdu-diagnosis__option">
+												<input type="radio" name="diagnosis-q01" value="4" class="bdu-diagnosis__option-input" aria-label="4점, 대체로 우수" />
+												<span class="bdu-diagnosis__option-text" aria-hidden="true"><em>4</em>대체로<br>우수</span>
+											</label>
+											<label class="bdu-diagnosis__option">
+												<input type="radio" name="diagnosis-q01" value="5" class="bdu-diagnosis__option-input" aria-label="5점, 매우 우수" />
+												<span class="bdu-diagnosis__option-text" aria-hidden="true"><em>5</em>매우<br>우수</span>
+											</label>
+										</div>
+									</fieldset>
+									<fieldset class="bdu-diagnosis__row">
+										<div class="bdu-diagnosis__row-text">양육자를 통해 영아의 특성을 확인할 수 있다.</div>
+										<div class="bdu-diagnosis__row-options">
+											<label class="bdu-diagnosis__option">
+												<input type="radio" name="diagnosis-q02" value="1" class="bdu-diagnosis__option-input" aria-label="1점, 매우 미흡" />
+												<span class="bdu-diagnosis__option-text" aria-hidden="true"><em>1</em>매우<br>미흡</span>
+											</label>
+											<label class="bdu-diagnosis__option">
+												<input type="radio" name="diagnosis-q02" value="2" class="bdu-diagnosis__option-input" aria-label="2점, 대체로 미흡" />
+												<span class="bdu-diagnosis__option-text" aria-hidden="true"><em>2</em>대체로<br>미흡</span>
+											</label>
+											<label class="bdu-diagnosis__option">
+												<input type="radio" name="diagnosis-q02" value="3" class="bdu-diagnosis__option-input" aria-label="3점, 보통" />
+												<span class="bdu-diagnosis__option-text" aria-hidden="true"><em>3</em>보통</span>
+											</label>
+											<label class="bdu-diagnosis__option">
+												<input type="radio" name="diagnosis-q02" value="4" class="bdu-diagnosis__option-input" aria-label="4점, 대체로 우수" />
+												<span class="bdu-diagnosis__option-text" aria-hidden="true"><em>4</em>대체로<br>우수</span>
+											</label>
+											<label class="bdu-diagnosis__option">
+												<input type="radio" name="diagnosis-q02" value="5" class="bdu-diagnosis__option-input" aria-label="5점, 매우 우수" />
+												<span class="bdu-diagnosis__option-text" aria-hidden="true"><em>5</em>매우<br>우수</span>
+											</label>
+										</div>
+									</fieldset>
+									<fieldset class="bdu-diagnosis__row">
+										<div class="bdu-diagnosis__row-text">양육자를 통해 영아의 기본 요구사항을 확인할 수 있다.</div>
+										<div class="bdu-diagnosis__row-options">
+											<label class="bdu-diagnosis__option">
+												<input type="radio" name="diagnosis-q03" value="1" class="bdu-diagnosis__option-input" aria-label="1점, 매우 미흡" />
+												<span class="bdu-diagnosis__option-text" aria-hidden="true"><em>1</em>매우<br>미흡</span>
+											</label>
+											<label class="bdu-diagnosis__option">
+												<input type="radio" name="diagnosis-q03" value="2" class="bdu-diagnosis__option-input" aria-label="2점, 대체로 미흡" />
+												<span class="bdu-diagnosis__option-text" aria-hidden="true"><em>2</em>대체로<br>미흡</span>
+											</label>
+											<label class="bdu-diagnosis__option">
+												<input type="radio" name="diagnosis-q03" value="3" class="bdu-diagnosis__option-input" aria-label="3점, 보통" />
+												<span class="bdu-diagnosis__option-text" aria-hidden="true"><em>3</em>보통</span>
+											</label>
+											<label class="bdu-diagnosis__option">
+												<input type="radio" name="diagnosis-q03" value="4" class="bdu-diagnosis__option-input" aria-label="4점, 대체로 우수" />
+												<span class="bdu-diagnosis__option-text" aria-hidden="true"><em>4</em>대체로<br>우수</span>
+											</label>
+											<label class="bdu-diagnosis__option">
+												<input type="radio" name="diagnosis-q03" value="5" class="bdu-diagnosis__option-input" aria-label="5점, 매우 우수" />
+												<span class="bdu-diagnosis__option-text" aria-hidden="true"><em>5</em>매우<br>우수</span>
+											</label>
+										</div>
+									</fieldset>
+								</div>
+							</div>
+							<div class="bdu-diagnosis__group">
+								<h3 class="bdu-diagnosis__group-title"><strong>유아</strong>를 둔 양육자와 면담하기</h3>
+								<div class="bdu-diagnosis__group-body">
+									<fieldset class="bdu-diagnosis__row">
+										<div class="bdu-diagnosis__row-text">양육자를 통해 유아를 둔 가족 특성을 확인할 수 있다.</div>
+										<div class="bdu-diagnosis__row-options">
+											<label class="bdu-diagnosis__option">
+												<input type="radio" name="diagnosis-q04" value="1" class="bdu-diagnosis__option-input" aria-label="1점, 매우 미흡" />
+												<span class="bdu-diagnosis__option-text" aria-hidden="true"><em>1</em>매우<br>미흡</span>
+											</label>
+											<label class="bdu-diagnosis__option">
+												<input type="radio" name="diagnosis-q04" value="2" class="bdu-diagnosis__option-input" aria-label="2점, 대체로 미흡" />
+												<span class="bdu-diagnosis__option-text" aria-hidden="true"><em>2</em>대체로<br>미흡</span>
+											</label>
+											<label class="bdu-diagnosis__option">
+												<input type="radio" name="diagnosis-q04" value="3" class="bdu-diagnosis__option-input" aria-label="3점, 보통" />
+												<span class="bdu-diagnosis__option-text" aria-hidden="true"><em>3</em>보통</span>
+											</label>
+											<label class="bdu-diagnosis__option">
+												<input type="radio" name="diagnosis-q04" value="4" class="bdu-diagnosis__option-input" aria-label="4점, 대체로 우수" />
+												<span class="bdu-diagnosis__option-text" aria-hidden="true"><em>4</em>대체로<br>우수</span>
+											</label>
+											<label class="bdu-diagnosis__option">
+												<input type="radio" name="diagnosis-q04" value="5" class="bdu-diagnosis__option-input" aria-label="5점, 매우 우수" />
+												<span class="bdu-diagnosis__option-text" aria-hidden="true"><em>5</em>매우<br>우수</span>
+											</label>
+										</div>
+									</fieldset>
+									<fieldset class="bdu-diagnosis__row">
+										<div class="bdu-diagnosis__row-text">양육자를 통해 유아의 특성을 확인할 수 있다.</div>
+										<div class="bdu-diagnosis__row-options">
+											<label class="bdu-diagnosis__option">
+												<input type="radio" name="diagnosis-q05" value="1" class="bdu-diagnosis__option-input" aria-label="1점, 매우 미흡" />
+												<span class="bdu-diagnosis__option-text" aria-hidden="true"><em>1</em>매우<br>미흡</span>
+											</label>
+											<label class="bdu-diagnosis__option">
+												<input type="radio" name="diagnosis-q05" value="2" class="bdu-diagnosis__option-input" aria-label="2점, 대체로 미흡" />
+												<span class="bdu-diagnosis__option-text" aria-hidden="true"><em>2</em>대체로<br>미흡</span>
+											</label>
+											<label class="bdu-diagnosis__option">
+												<input type="radio" name="diagnosis-q05" value="3" class="bdu-diagnosis__option-input" aria-label="3점, 보통" />
+												<span class="bdu-diagnosis__option-text" aria-hidden="true"><em>3</em>보통</span>
+											</label>
+											<label class="bdu-diagnosis__option">
+												<input type="radio" name="diagnosis-q05" value="4" class="bdu-diagnosis__option-input" aria-label="4점, 대체로 우수" />
+												<span class="bdu-diagnosis__option-text" aria-hidden="true"><em>4</em>대체로<br>우수</span>
+											</label>
+											<label class="bdu-diagnosis__option">
+												<input type="radio" name="diagnosis-q05" value="5" class="bdu-diagnosis__option-input" aria-label="5점, 매우 우수" />
+												<span class="bdu-diagnosis__option-text" aria-hidden="true"><em>5</em>매우<br>우수</span>
+											</label>
+										</div>
+									</fieldset>
+									<fieldset class="bdu-diagnosis__row">
+										<div class="bdu-diagnosis__row-text">양육자를 통해 유아의 기본 요구사항을 확인할 수 있다.</div>
+										<div class="bdu-diagnosis__row-options">
+											<label class="bdu-diagnosis__option">
+												<input type="radio" name="diagnosis-q06" value="1" class="bdu-diagnosis__option-input" aria-label="1점, 매우 미흡" />
+												<span class="bdu-diagnosis__option-text" aria-hidden="true"><em>1</em>매우<br>미흡</span>
+											</label>
+											<label class="bdu-diagnosis__option">
+												<input type="radio" name="diagnosis-q06" value="2" class="bdu-diagnosis__option-input" aria-label="2점, 대체로 미흡" />
+												<span class="bdu-diagnosis__option-text" aria-hidden="true"><em>2</em>대체로<br>미흡</span>
+											</label>
+											<label class="bdu-diagnosis__option">
+												<input type="radio" name="diagnosis-q06" value="3" class="bdu-diagnosis__option-input" aria-label="3점, 보통" />
+												<span class="bdu-diagnosis__option-text" aria-hidden="true"><em>3</em>보통</span>
+											</label>
+											<label class="bdu-diagnosis__option">
+												<input type="radio" name="diagnosis-q06" value="4" class="bdu-diagnosis__option-input" aria-label="4점, 대체로 우수" />
+												<span class="bdu-diagnosis__option-text" aria-hidden="true"><em>4</em>대체로<br>우수</span>
+											</label>
+											<label class="bdu-diagnosis__option">
+												<input type="radio" name="diagnosis-q06" value="5" class="bdu-diagnosis__option-input" aria-label="5점, 매우 우수" />
+												<span class="bdu-diagnosis__option-text" aria-hidden="true"><em>5</em>매우<br>우수</span>
+											</label>
+										</div>
+									</fieldset>
+								</div>
+							</div>
+							<div class="bdu-diagnosis__group">
+								<h3 class="bdu-diagnosis__group-title"><strong>아동</strong>을 둔 양육자와 면담하기</h3>
+								<div class="bdu-diagnosis__group-body">
+									<fieldset class="bdu-diagnosis__row">
+										<div class="bdu-diagnosis__row-text">양육자를 통해 아동을 둔 가족 특성을 확인할 수 있다.</div>
+										<div class="bdu-diagnosis__row-options">
+											<label class="bdu-diagnosis__option">
+												<input type="radio" name="diagnosis-q07" value="1" class="bdu-diagnosis__option-input" aria-label="1점, 매우 미흡" />
+												<span class="bdu-diagnosis__option-text" aria-hidden="true"><em>1</em>매우<br>미흡</span>
+											</label>
+											<label class="bdu-diagnosis__option">
+												<input type="radio" name="diagnosis-q07" value="2" class="bdu-diagnosis__option-input" aria-label="2점, 대체로 미흡" />
+												<span class="bdu-diagnosis__option-text" aria-hidden="true"><em>2</em>대체로<br>미흡</span>
+											</label>
+											<label class="bdu-diagnosis__option">
+												<input type="radio" name="diagnosis-q07" value="3" class="bdu-diagnosis__option-input" aria-label="3점, 보통" />
+												<span class="bdu-diagnosis__option-text" aria-hidden="true"><em>3</em>보통</span>
+											</label>
+											<label class="bdu-diagnosis__option">
+												<input type="radio" name="diagnosis-q07" value="4" class="bdu-diagnosis__option-input" aria-label="4점, 대체로 우수" />
+												<span class="bdu-diagnosis__option-text" aria-hidden="true"><em>4</em>대체로<br>우수</span>
+											</label>
+											<label class="bdu-diagnosis__option">
+												<input type="radio" name="diagnosis-q07" value="5" class="bdu-diagnosis__option-input" aria-label="5점, 매우 우수" />
+												<span class="bdu-diagnosis__option-text" aria-hidden="true"><em>5</em>매우<br>우수</span>
+											</label>
+										</div>
+									</fieldset>
+									<fieldset class="bdu-diagnosis__row">
+										<div class="bdu-diagnosis__row-text">양육자를 통해 아동의 특성을 확인할 수 있다.</div>
+										<div class="bdu-diagnosis__row-options">
+											<label class="bdu-diagnosis__option">
+												<input type="radio" name="diagnosis-q08" value="1" class="bdu-diagnosis__option-input" aria-label="1점, 매우 미흡" />
+												<span class="bdu-diagnosis__option-text" aria-hidden="true"><em>1</em>매우<br>미흡</span>
+											</label>
+											<label class="bdu-diagnosis__option">
+												<input type="radio" name="diagnosis-q08" value="2" class="bdu-diagnosis__option-input" aria-label="2점, 대체로 미흡" />
+												<span class="bdu-diagnosis__option-text" aria-hidden="true"><em>2</em>대체로<br>미흡</span>
+											</label>
+											<label class="bdu-diagnosis__option">
+												<input type="radio" name="diagnosis-q08" value="3" class="bdu-diagnosis__option-input" aria-label="3점, 보통" />
+												<span class="bdu-diagnosis__option-text" aria-hidden="true"><em>3</em>보통</span>
+											</label>
+											<label class="bdu-diagnosis__option">
+												<input type="radio" name="diagnosis-q08" value="4" class="bdu-diagnosis__option-input" aria-label="4점, 대체로 우수" />
+												<span class="bdu-diagnosis__option-text" aria-hidden="true"><em>4</em>대체로<br>우수</span>
+											</label>
+											<label class="bdu-diagnosis__option">
+												<input type="radio" name="diagnosis-q08" value="5" class="bdu-diagnosis__option-input" aria-label="5점, 매우 우수" />
+												<span class="bdu-diagnosis__option-text" aria-hidden="true"><em>5</em>매우<br>우수</span>
+											</label>
+										</div>
+									</fieldset>
+									<fieldset class="bdu-diagnosis__row">
+										<div class="bdu-diagnosis__row-text">양육자를 통해 아동의 기본 요구사항을 확인할 수 있다.</div>
+										<div class="bdu-diagnosis__row-options">
+											<label class="bdu-diagnosis__option">
+												<input type="radio" name="diagnosis-q09" value="1" class="bdu-diagnosis__option-input" aria-label="1점, 매우 미흡" />
+												<span class="bdu-diagnosis__option-text" aria-hidden="true"><em>1</em>매우<br>미흡</span>
+											</label>
+											<label class="bdu-diagnosis__option">
+												<input type="radio" name="diagnosis-q09" value="2" class="bdu-diagnosis__option-input" aria-label="2점, 대체로 미흡" />
+												<span class="bdu-diagnosis__option-text" aria-hidden="true"><em>2</em>대체로<br>미흡</span>
+											</label>
+											<label class="bdu-diagnosis__option">
+												<input type="radio" name="diagnosis-q09" value="3" class="bdu-diagnosis__option-input" aria-label="3점, 보통" />
+												<span class="bdu-diagnosis__option-text" aria-hidden="true"><em>3</em>보통</span>
+											</label>
+											<label class="bdu-diagnosis__option">
+												<input type="radio" name="diagnosis-q09" value="4" class="bdu-diagnosis__option-input" aria-label="4점, 대체로 우수" />
+												<span class="bdu-diagnosis__option-text" aria-hidden="true"><em>4</em>대체로<br>우수</span>
+											</label>
+											<label class="bdu-diagnosis__option">
+												<input type="radio" name="diagnosis-q09" value="5" class="bdu-diagnosis__option-input" aria-label="5점, 매우 우수" />
+												<span class="bdu-diagnosis__option-text" aria-hidden="true"><em>5</em>매우<br>우수</span>
+											</label>
+										</div>
+									</fieldset>
+								</div>
+							</div>
+							<div class="bdu-diagnosis__group">
+								<h3 class="bdu-diagnosis__group-title"><strong>다양한 가족</strong>의 양육자와 면담하기</h3>
+								<div class="bdu-diagnosis__group-body">
+									<fieldset class="bdu-diagnosis__row">
+										<div class="bdu-diagnosis__row-text">양육자를 통해 다문화가족을 둔 가족 특성을 확인할 수 있다.</div>
+										<div class="bdu-diagnosis__row-options">
+											<label class="bdu-diagnosis__option">
+												<input type="radio" name="diagnosis-q10" value="1" class="bdu-diagnosis__option-input" aria-label="1점, 매우 미흡" />
+												<span class="bdu-diagnosis__option-text" aria-hidden="true"><em>1</em>매우<br>미흡</span>
+											</label>
+											<label class="bdu-diagnosis__option">
+												<input type="radio" name="diagnosis-q10" value="2" class="bdu-diagnosis__option-input" aria-label="2점, 대체로 미흡" />
+												<span class="bdu-diagnosis__option-text" aria-hidden="true"><em>2</em>대체로<br>미흡</span>
+											</label>
+											<label class="bdu-diagnosis__option">
+												<input type="radio" name="diagnosis-q10" value="3" class="bdu-diagnosis__option-input" aria-label="3점, 보통" />
+												<span class="bdu-diagnosis__option-text" aria-hidden="true"><em>3</em>보통</span>
+											</label>
+											<label class="bdu-diagnosis__option">
+												<input type="radio" name="diagnosis-q10" value="4" class="bdu-diagnosis__option-input" aria-label="4점, 대체로 우수" />
+												<span class="bdu-diagnosis__option-text" aria-hidden="true"><em>4</em>대체로<br>우수</span>
+											</label>
+											<label class="bdu-diagnosis__option">
+												<input type="radio" name="diagnosis-q10" value="5" class="bdu-diagnosis__option-input" aria-label="5점, 매우 우수" />
+												<span class="bdu-diagnosis__option-text" aria-hidden="true"><em>5</em>매우<br>우수</span>
+											</label>
+										</div>
+									</fieldset>
+									<fieldset class="bdu-diagnosis__row">
+										<div class="bdu-diagnosis__row-text">양육자를 통해 다문화 아동의 기본 요구사항을 확인할 수 있다.</div>
+										<div class="bdu-diagnosis__row-options">
+											<label class="bdu-diagnosis__option">
+												<input type="radio" name="diagnosis-q11" value="1" class="bdu-diagnosis__option-input" aria-label="1점, 매우 미흡" />
+												<span class="bdu-diagnosis__option-text" aria-hidden="true"><em>1</em>매우<br>미흡</span>
+											</label>
+											<label class="bdu-diagnosis__option">
+												<input type="radio" name="diagnosis-q11" value="2" class="bdu-diagnosis__option-input" aria-label="2점, 대체로 미흡" />
+												<span class="bdu-diagnosis__option-text" aria-hidden="true"><em>2</em>대체로<br>미흡</span>
+											</label>
+											<label class="bdu-diagnosis__option">
+												<input type="radio" name="diagnosis-q11" value="3" class="bdu-diagnosis__option-input" aria-label="3점, 보통" />
+												<span class="bdu-diagnosis__option-text" aria-hidden="true"><em>3</em>보통</span>
+											</label>
+											<label class="bdu-diagnosis__option">
+												<input type="radio" name="diagnosis-q11" value="4" class="bdu-diagnosis__option-input" aria-label="4점, 대체로 우수" />
+												<span class="bdu-diagnosis__option-text" aria-hidden="true"><em>4</em>대체로<br>우수</span>
+											</label>
+											<label class="bdu-diagnosis__option">
+												<input type="radio" name="diagnosis-q11" value="5" class="bdu-diagnosis__option-input" aria-label="5점, 매우 우수" />
+												<span class="bdu-diagnosis__option-text" aria-hidden="true"><em>5</em>매우<br>우수</span>
+											</label>
+										</div>
+									</fieldset>
+									<fieldset class="bdu-diagnosis__row">
+										<div class="bdu-diagnosis__row-text">양육자를 통해 한부모가족의 아동의 특성을 확인할 수 있다.</div>
+										<div class="bdu-diagnosis__row-options">
+											<label class="bdu-diagnosis__option">
+												<input type="radio" name="diagnosis-q12" value="1" class="bdu-diagnosis__option-input" aria-label="1점, 매우 미흡" />
+												<span class="bdu-diagnosis__option-text" aria-hidden="true"><em>1</em>매우<br>미흡</span>
+											</label>
+											<label class="bdu-diagnosis__option">
+												<input type="radio" name="diagnosis-q12" value="2" class="bdu-diagnosis__option-input" aria-label="2점, 대체로 미흡" />
+												<span class="bdu-diagnosis__option-text" aria-hidden="true"><em>2</em>대체로<br>미흡</span>
+											</label>
+											<label class="bdu-diagnosis__option">
+												<input type="radio" name="diagnosis-q12" value="3" class="bdu-diagnosis__option-input" aria-label="3점, 보통" />
+												<span class="bdu-diagnosis__option-text" aria-hidden="true"><em>3</em>보통</span>
+											</label>
+											<label class="bdu-diagnosis__option">
+												<input type="radio" name="diagnosis-q12" value="4" class="bdu-diagnosis__option-input" aria-label="4점, 대체로 우수" />
+												<span class="bdu-diagnosis__option-text" aria-hidden="true"><em>4</em>대체로<br>우수</span>
+											</label>
+											<label class="bdu-diagnosis__option">
+												<input type="radio" name="diagnosis-q12" value="5" class="bdu-diagnosis__option-input" aria-label="5점, 매우 우수" />
+												<span class="bdu-diagnosis__option-text" aria-hidden="true"><em>5</em>매우<br>우수</span>
+											</label>
+										</div>
+									</fieldset>
+									<fieldset class="bdu-diagnosis__row">
+										<div class="bdu-diagnosis__row-text">양육자를 통해 한부모 아동의 기본 요구사항을 확인할 수 있다.</div>
+										<div class="bdu-diagnosis__row-options">
+											<label class="bdu-diagnosis__option">
+												<input type="radio" name="diagnosis-q13" value="1" class="bdu-diagnosis__option-input" aria-label="1점, 매우 미흡" />
+												<span class="bdu-diagnosis__option-text" aria-hidden="true"><em>1</em>매우<br>미흡</span>
+											</label>
+											<label class="bdu-diagnosis__option">
+												<input type="radio" name="diagnosis-q13" value="2" class="bdu-diagnosis__option-input" aria-label="2점, 대체로 미흡" />
+												<span class="bdu-diagnosis__option-text" aria-hidden="true"><em>2</em>대체로<br>미흡</span>
+											</label>
+											<label class="bdu-diagnosis__option">
+												<input type="radio" name="diagnosis-q13" value="3" class="bdu-diagnosis__option-input" aria-label="3점, 보통" />
+												<span class="bdu-diagnosis__option-text" aria-hidden="true"><em>3</em>보통</span>
+											</label>
+											<label class="bdu-diagnosis__option">
+												<input type="radio" name="diagnosis-q13" value="4" class="bdu-diagnosis__option-input" aria-label="4점, 대체로 우수" />
+												<span class="bdu-diagnosis__option-text" aria-hidden="true"><em>4</em>대체로<br>우수</span>
+											</label>
+											<label class="bdu-diagnosis__option">
+												<input type="radio" name="diagnosis-q13" value="5" class="bdu-diagnosis__option-input" aria-label="5점, 매우 우수" />
+												<span class="bdu-diagnosis__option-text" aria-hidden="true"><em>5</em>매우<br>우수</span>
+											</label>
+										</div>
+									</fieldset>
+									<fieldset class="bdu-diagnosis__row">
+										<div class="bdu-diagnosis__row-text">양육자를 통해 장애아동의 기본 요구사항을 확인할 수 있다.</div>
+										<div class="bdu-diagnosis__row-options">
+											<label class="bdu-diagnosis__option">
+												<input type="radio" name="diagnosis-q14" value="1" class="bdu-diagnosis__option-input" aria-label="1점, 매우 미흡" />
+												<span class="bdu-diagnosis__option-text" aria-hidden="true"><em>1</em>매우<br>미흡</span>
+											</label>
+											<label class="bdu-diagnosis__option">
+												<input type="radio" name="diagnosis-q14" value="2" class="bdu-diagnosis__option-input" aria-label="2점, 대체로 미흡" />
+												<span class="bdu-diagnosis__option-text" aria-hidden="true"><em>2</em>대체로<br>미흡</span>
+											</label>
+											<label class="bdu-diagnosis__option">
+												<input type="radio" name="diagnosis-q14" value="3" class="bdu-diagnosis__option-input" aria-label="3점, 보통" />
+												<span class="bdu-diagnosis__option-text" aria-hidden="true"><em>3</em>보통</span>
+											</label>
+											<label class="bdu-diagnosis__option">
+												<input type="radio" name="diagnosis-q14" value="4" class="bdu-diagnosis__option-input" aria-label="4점, 대체로 우수" />
+												<span class="bdu-diagnosis__option-text" aria-hidden="true"><em>4</em>대체로<br>우수</span>
+											</label>
+											<label class="bdu-diagnosis__option">
+												<input type="radio" name="diagnosis-q14" value="5" class="bdu-diagnosis__option-input" aria-label="5점, 매우 우수" />
+												<span class="bdu-diagnosis__option-text" aria-hidden="true"><em>5</em>매우<br>우수</span>
+											</label>
+										</div>
+									</fieldset>
+									<fieldset class="bdu-diagnosis__row">
+										<div class="bdu-diagnosis__row-text">양육자를 통해 장애아동의 기본 요구사항을 확인할 수 있다.</div>
+										<div class="bdu-diagnosis__row-options">
+											<label class="bdu-diagnosis__option">
+												<input type="radio" name="diagnosis-q15" value="1" class="bdu-diagnosis__option-input" aria-label="1점, 매우 미흡" />
+												<span class="bdu-diagnosis__option-text" aria-hidden="true"><em>1</em>매우<br>미흡</span>
+											</label>
+											<label class="bdu-diagnosis__option">
+												<input type="radio" name="diagnosis-q15" value="2" class="bdu-diagnosis__option-input" aria-label="2점, 대체로 미흡" />
+												<span class="bdu-diagnosis__option-text" aria-hidden="true"><em>2</em>대체로<br>미흡</span>
+											</label>
+											<label class="bdu-diagnosis__option">
+												<input type="radio" name="diagnosis-q15" value="3" class="bdu-diagnosis__option-input" aria-label="3점, 보통" />
+												<span class="bdu-diagnosis__option-text" aria-hidden="true"><em>3</em>보통</span>
+											</label>
+											<label class="bdu-diagnosis__option">
+												<input type="radio" name="diagnosis-q15" value="4" class="bdu-diagnosis__option-input" aria-label="4점, 대체로 우수" />
+												<span class="bdu-diagnosis__option-text" aria-hidden="true"><em>4</em>대체로<br>우수</span>
+											</label>
+											<label class="bdu-diagnosis__option">
+												<input type="radio" name="diagnosis-q15" value="5" class="bdu-diagnosis__option-input" aria-label="5점, 매우 우수" />
+												<span class="bdu-diagnosis__option-text" aria-hidden="true"><em>5</em>매우<br>우수</span>
+											</label>
+										</div>
+									</fieldset>
+								</div>
+							</div>
+						</div>
+
+						<div class="bdu-diagnosis__actions">
+							<button type="button" class="bdu-button bdu-button--result">결과확인</button>
+						</div>
+					</form>
+
+					<div class="bdu-diagnosis-result" hidden aria-live="polite">
+						<h2 class="bdu-diagnosis-result__header">사전 진단 결과</h2>
+						<div class="bdu-diagnosis-result__body">
+							<p class="bdu-diagnosis-result__score-line">
+								<strong class="bdu-diagnosis-mark">양육태도</strong>에 대한 진단 결과 점수는
+								<strong class="bdu-diagnosis-result__score">0</strong>점 입니다.
+							</p>
+							<p class="bdu-diagnosis-result__desc">
+								애정점수가 높으면 애정적인 양육태도를 가졌음을 의미합니다. 점수가 낮은 항목에 대해서는 더 노력하실 필요가 있습니다.<br>
+								8주 1강에서 사후 점검이 있을 예정입니다. 사전 진단과 사후 점검을 나중에 비교해 보세요.
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+	</div>
+
+	<script src="../js/main.js"></script>
+</body>
+
+</html>
