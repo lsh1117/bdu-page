@@ -146,7 +146,9 @@ function initQuizTabs(root = document) {
 		root.dispatchEvent(
 			new CustomEvent("bdu:quiz-tab-change", {
 				bubbles: true,
-				detail: { index },
+				detail: {
+					index
+				},
 			})
 		);
 	}
@@ -267,7 +269,7 @@ function bindNoticeModal(root = document) {
 	}
 
 	const section = root.querySelector(QUIZ_SECTION_SELECTOR);
-	const modal = section?.querySelector(".bdu-notice-modal");
+	const modal = section ?.querySelector(".bdu-notice-modal");
 	if (!modal) {
 		noticeModalCache.set(root, null);
 		return null;
@@ -287,7 +289,7 @@ function bindNoticeModal(root = document) {
 		lastFocused = document.activeElement;
 		modal.hidden = false;
 		requestAnimationFrame(() => modal.classList.add("bdu-is-open"));
-		modal.querySelector(".bdu-notice-modal__close")?.focus();
+		modal.querySelector(".bdu-notice-modal__close") ?.focus();
 	}
 
 	function close() {
@@ -295,7 +297,7 @@ function bindNoticeModal(root = document) {
 
 		setTimeout(() => {
 			modal.hidden = true;
-			lastFocused?.focus();
+			lastFocused ?.focus();
 			lastFocused = null;
 		}, 200);
 	}
@@ -304,7 +306,7 @@ function bindNoticeModal(root = document) {
 		btn.addEventListener("click", close);
 	});
 
-	overlay?.addEventListener("click", close);
+	overlay ?.addEventListener("click", close);
 
 	window.addEventListener("keydown", (event) => {
 		if (event.key === "Escape" && !modal.hidden) {
@@ -312,8 +314,98 @@ function bindNoticeModal(root = document) {
 		}
 	});
 
-	const api = { open, close };
+	const api = {
+		open,
+		close
+	};
 	noticeModalCache.set(root, api);
+	return api;
+}
+
+/* ==========================================================================
+   Next Topic modal (다음 강의 주제는? 안내)
+   ========================================================================== */
+/** @type {WeakMap<Document | Element, ReturnType<typeof bindNextTopicModal>>} */
+const nextTopicModalCache = new WeakMap();
+const NEXT_TOPIC_SECTION_SELECTOR = ".page-0009";
+
+/* ==========================================================================
+   Next Topic Modal
+   ========================================================================== */
+
+function initNextTopicModal(root = document) {
+	const section = root.querySelector(NEXT_TOPIC_SECTION_SELECTOR);
+	if (!section) {
+		return;
+	}
+	const nextTopicModalApi = bindNextTopicModal(root);
+
+	const nextTopicBtn = section.querySelector(".bdu-button--summary-actions");
+	nextTopicBtn ?.addEventListener("click", () => {
+		nextTopicModalApi ?.open();
+	});
+}
+
+/**
+ * @param {Document | Element} root
+ * @returns {{ open: Function, close: Function } | null}
+ */
+function bindNextTopicModal(root = document) {
+	if (nextTopicModalCache.has(root)) {
+		return nextTopicModalCache.get(root);
+	}
+
+	const section = root.querySelector(NEXT_TOPIC_SECTION_SELECTOR);
+	const modal = section ?.querySelector("#next-topic-modal");
+	if (!modal) {
+		nextTopicModalCache.set(root, null);
+		return null;
+	}
+
+	const messageEl = modal.querySelector(".bdu-modal__message");
+	const overlay = modal.querySelector(".bdu-modal__overlay");
+	const closeButtons = modal.querySelectorAll("[data-modal-close]");
+
+	let lastFocused = null;
+
+	function open(message) {
+		if (messageEl && message) {
+			messageEl.textContent = message;
+		}
+
+		lastFocused = document.activeElement;
+		modal.hidden = false;
+		requestAnimationFrame(() => modal.classList.add("bdu-is-open"));
+		modal.querySelector(".bdu-modal__close") ?.focus();
+	}
+
+	function close() {
+		modal.classList.remove("bdu-is-open");
+
+		setTimeout(() => {
+			modal.hidden = true;
+			lastFocused ?.focus();
+			lastFocused = null;
+		}, 200);
+	}
+
+	closeButtons.forEach((btn) => {
+		btn.addEventListener("click", close);
+	});
+
+	overlay ?.addEventListener("click", close);
+
+	window.addEventListener("keydown", (event) => {
+		if (event.key === "Escape" && !modal.hidden) {
+			close();
+		}
+	});
+
+	const api = {
+		open,
+		close
+	};
+	nextTopicModalCache.set(root, api);
 	return api;
 }
 
@@ -369,14 +461,14 @@ function initQuizAnswer(root = document) {
 
 		function attemptOpenAnswer() {
 			if (!hasAnswered(panel)) {
-				noticeModalApi?.open(getUnansweredMessage(panel));
+				noticeModalApi ?.open(getUnansweredMessage(panel));
 				return;
 			}
 			modalApi.openFromPanel();
 		}
 
 		const checkBtn = panel.querySelector(".bdu-button--check");
-		checkBtn?.addEventListener("click", attemptOpenAnswer);
+		checkBtn ?.addEventListener("click", attemptOpenAnswer);
 
 		panel.querySelectorAll(".bdu-quiz-blank__input").forEach((input) => {
 			input.addEventListener("keydown", (event) => {
@@ -409,7 +501,7 @@ const CORRECT_PAIRS = {
 
 function initQuizMatch(root = document) {
 	const section = root.querySelector(QUIZ_SECTION_SELECTOR);
-	const panel = section?.querySelector(MATCH_PANEL_SELECTOR);
+	const panel = section ?.querySelector(MATCH_PANEL_SELECTOR);
 	if (!section || !panel) {
 		return;
 	}
@@ -486,8 +578,10 @@ function initQuizMatch(root = document) {
 
 		if (dragging) {
 			drawLine(
-				getNodeCenter(dragging.fromNode),
-				{ x: dragging.currentX, y: dragging.currentY },
+				getNodeCenter(dragging.fromNode), {
+					x: dragging.currentX,
+					y: dragging.currentY
+				},
 				"#999",
 				true
 			);
@@ -619,7 +713,7 @@ function initQuizMatch(root = document) {
 		}
 
 		if (connections.size === 0) {
-			noticeModalApi?.open("정답을 선택하세요");
+			noticeModalApi ?.open("정답을 선택하세요");
 			return;
 		}
 
@@ -629,7 +723,7 @@ function initQuizMatch(root = document) {
 
 		if (allConnected) {
 			required.forEach((leftId) => {
-				if (connections.get(leftId)?.rightId !== CORRECT_PAIRS[leftId]) {
+				if (connections.get(leftId) ?.rightId !== CORRECT_PAIRS[leftId]) {
 					allCorrect = false;
 				}
 			});
@@ -654,12 +748,14 @@ function initQuizMatch(root = document) {
 
 	window.addEventListener("mousemove", onMove);
 	window.addEventListener("mouseup", endDrag);
-	window.addEventListener("touchmove", onMove, { passive: false });
+	window.addEventListener("touchmove", onMove, {
+		passive: false
+	});
 	window.addEventListener("touchend", endDrag);
 	window.addEventListener("touchcancel", endDrag);
 
-	checkBtn?.addEventListener("click", validateAndShowAnswer);
-	resetBtn?.addEventListener("click", resetMatches);
+	checkBtn ?.addEventListener("click", validateAndShowAnswer);
+	resetBtn ?.addEventListener("click", resetMatches);
 
 	const resizeObserver = new ResizeObserver(() => resizeCanvas());
 	resizeObserver.observe(board);
@@ -667,7 +763,7 @@ function initQuizMatch(root = document) {
 	window.addEventListener("resize", resizeCanvas);
 
 	const tabBtn = section.querySelector("#quiz-tab-5");
-	tabBtn?.addEventListener("click", () => {
+	tabBtn ?.addEventListener("click", () => {
 		requestAnimationFrame(resizeCanvas);
 	});
 }
@@ -713,7 +809,10 @@ function initDiagnosis(root = document) {
 
 		scoreEl.textContent = String(sum);
 		resultBox.hidden = false;
-		resultBox.scrollIntoView({ behavior: "smooth", block: "nearest" });
+		resultBox.scrollIntoView({
+			behavior: "smooth",
+			block: "nearest"
+		});
 	});
 }
 
@@ -747,7 +846,7 @@ function setActiveNav(root, pageId, quizTabIndex = null) {
 
 		let isActive = false;
 
-		if (directLink?.dataset.bduPage === pageId) {
+		if (directLink ?.dataset.bduPage === pageId) {
 			isActive = quizTabIndex === null || !directLink.dataset.bduQuizTab;
 		}
 
@@ -782,7 +881,9 @@ function setActiveNav(root, pageId, quizTabIndex = null) {
  * @param {{ quizTab?: number | null, closeMenu?: boolean }} [options]
  */
 function showPage(root, pageId, options = {}) {
-	const { quizTab = null, closeMenu = true } = options;
+	const {
+		quizTab = null, closeMenu = true
+	} = options;
 	const sections = root.querySelectorAll(PAGE_SECTION_SELECTOR);
 
 	sections.forEach((section) => {
@@ -802,7 +903,9 @@ function showPage(root, pageId, options = {}) {
 	}
 
 	const activeSection = root.querySelector(`.${pageId}.bdu-is-active`);
-	activeSection?.scrollIntoView({ block: "start" });
+	activeSection ?.scrollIntoView({
+		block: "start"
+	});
 }
 
 function initPageNav(root = document) {
@@ -820,7 +923,9 @@ function initPageNav(root = document) {
 		section.hidden = true;
 	});
 
-	showPage(root, defaultPage, { closeMenu: false });
+	showPage(root, defaultPage, {
+		closeMenu: false
+	});
 
 	navLinks.forEach((link) => {
 		link.addEventListener("click", (event) => {
@@ -918,6 +1023,7 @@ function init() {
 	initDiagnosis();
 	initPageNav();
 	initSound();
+	initNextTopicModal();
 }
 
 if (document.readyState === "loading") {

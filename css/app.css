@@ -265,6 +265,25 @@ button {
 .bdu-button--modal-close {
   border-radius: 4px;
 }
+.bdu-button--summary-actions {
+  width: 169px;
+  height: 79px;
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+  background-image: url("../images/page0009/btn_next.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  font-size: 0;
+  line-height: 0;
+  color: transparent;
+  overflow: hidden;
+}
+.bdu-button--summary-actions:hover, .bdu-button--summary-actions:focus-visible {
+  outline: none;
+  background-image: url("../images/page0009/btn_next_hover.png");
+}
 
 @media (max-width: 480px) and (max-width: 480px) {
   .bdu-button--result,
@@ -273,6 +292,12 @@ button {
   .bdu-button--modal-close {
     width: 100%;
     max-width: 280px;
+  }
+}
+@media (max-width: 480px) {
+  .bdu-button--summary-actions {
+    width: 128px;
+    height: 60px;
   }
 }
 .bdu-lnb-overlay {
@@ -1153,6 +1178,101 @@ button {
     height: 48px;
   }
 }
+.bdu-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 70;
+}
+.bdu-modal[hidden] {
+  display: none;
+}
+
+.bdu-modal__overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.bdu-modal.bdu-is-open .bdu-modal__overlay {
+  opacity: 1;
+}
+
+.bdu-modal__box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: min(504px, 92vw);
+  max-height: 85vh;
+  overflow-y: auto;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 20px 48px rgba(9, 52, 103, 0.35);
+  transform: translate(-50%, -48%);
+  opacity: 0;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.bdu-modal.bdu-is-open .bdu-modal__box {
+  transform: translate(-50%, -50%);
+  opacity: 1;
+}
+
+.bdu-modal__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 23px 24px 16px;
+}
+
+.bdu-modal__title {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 600;
+  color: #111;
+  letter-spacing: -0.4px;
+}
+
+.bdu-modal__close {
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1;
+  color: #151515;
+  cursor: pointer;
+}
+
+.bdu-modal__body {
+  padding: 0 24px 20px;
+}
+
+.bdu-modal__message {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100px;
+  margin: 0;
+  padding: 20px;
+  background: #f1f1f1;
+  border-radius: 16px;
+  font-size: 20px;
+  font-weight: 400;
+  color: #111;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.bdu-modal__footer {
+  padding: 0 24px 28px;
+  text-align: center;
+}
+
 .bdu-page-head {
   margin: 0 0 36px;
   padding: 20px 12px;
@@ -3096,6 +3216,18 @@ button {
   background: #d66325;
   border-radius: 1px;
 }
+.page-0009 .bdu-summary-actions {
+  position: fixed;
+  bottom: 19px;
+  right: 15px;
+}
+.page-0009 .bdu-modal__message {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  flex-direction: column;
+  line-height: 1.5;
+}
 @media (max-width: 768px) {
   .page-0009 .bdu-summary {
     padding: 24px 0 32px;
@@ -3152,6 +3284,32 @@ button {
     width: 4px;
     height: 4px;
   }
+  .page-0009 .bdu-summary-actions {
+    position: fixed;
+    bottom: 24px;
+    right: 16px;
+  }
+}
+.page-0009 .bdu-button--modal-close {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 116px;
+  height: 40px;
+  padding: 4px 30px;
+  border: 0;
+  border-radius: 8px;
+  background: #d66325;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+.page-0009 .bdu-button--modal-close:hover, .page-0009 .bdu-button--modal-close:focus {
+  background: #c1571f;
+  outline: 2px solid #d66325;
+  outline-offset: 2px;
 }
 
 .page-0010 .bdu-glossary {

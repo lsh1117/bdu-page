@@ -123,6 +123,31 @@
 						</ul>
 					</section>
 				</div>
+
+				<div class="bdu-summary-actions">
+					<button type="button" class="bdu-button bdu-button--summary-actions">다음 강의 주제는?</button>
+				</div> 
+
+				<div id="next-topic-modal" class="bdu-modal" hidden>
+					<div class="bdu-modal__overlay" data-notice-modal-close></div>
+					<div class="bdu-modal__box" role="alertdialog" aria-modal="true"
+						aria-labelledby="next-topic-title">
+						<div class="bdu-modal__header">
+							<h2 id="next-topic-title" class="bdu-modal__title">다음강의 주제는?</h2>
+							<button type="button" class="bdu-modal__close" data-modal-close
+								aria-label="안내 닫기">×</button>
+						</div>
+						<div class="bdu-modal__body">
+							<p class="bdu-modal__message">
+								<strong>$1-2 아이 부모들의 이야기$</strong>
+								<span>입니다.</span>
+							</p>
+						</div>
+						<div class="bdu-modal__footer">
+							<button type="button" class="bdu-button bdu-button--modal-close" data-modal-close>확인</button>
+						</div>
+					</div>
+				</div>
 			</section>
 		</main>
 	</div>
